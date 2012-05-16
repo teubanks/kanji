@@ -42,24 +42,25 @@
 		3A997E921563E1E5003B81C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A997E941563E1E5003B81C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3A997E961563E1E5003B81C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		3A997E9A1563E1E5003B81C4 /* kanji-Info.plist */ = {isa = PBXFileReference; path = "kanji-Info.plist"; sourceTree = "<group>"; };
+		3A997E9A1563E1E5003B81C4 /* kanji-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kanji-Info.plist"; sourceTree = "<group>"; };
 		3A997E9C1563E1E5003B81C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A997E9E1563E1E5003B81C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3A997EA01563E1E5003B81C4 /* kanji-Prefix.pch */ = {isa = PBXFileReference; path = "kanji-Prefix.pch"; sourceTree = "<group>"; };
-		3A997EA11563E1E5003B81C4 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A997EA01563E1E5003B81C4 /* kanji-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kanji-Prefix.pch"; sourceTree = "<group>"; };
+		3A997EA11563E1E5003B81C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A997EA21563E1E5003B81C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3A997EA51563E1E6003B81C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3A997EA81563E1E6003B81C4 /* kanji.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kanji.xcdatamodel; sourceTree = "<group>"; };
-		3A997EAA1563E1E6003B81C4 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		3A997EAA1563E1E6003B81C4 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		3A997EAB1563E1E6003B81C4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		3A997EAD1563E1E6003B81C4 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		3A997EAD1563E1E6003B81C4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3A997EAE1563E1E6003B81C4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3A997EB51563E1E6003B81C4 /* kanjiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kanjiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A997EB61563E1E6003B81C4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3A997EBF1563E1E6003B81C4 /* kanjiTests-Info.plist */ = {isa = PBXFileReference; path = "kanjiTests-Info.plist"; sourceTree = "<group>"; };
+		3A997EBF1563E1E6003B81C4 /* kanjiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kanjiTests-Info.plist"; sourceTree = "<group>"; };
 		3A997EC11563E1E6003B81C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3A997EC31563E1E6003B81C4 /* kanjiTests.h */ = {isa = PBXFileReference; path = kanjiTests.h; sourceTree = "<group>"; };
+		3A997EC31563E1E6003B81C4 /* kanjiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kanjiTests.h; sourceTree = "<group>"; };
 		3A997EC41563E1E6003B81C4 /* kanjiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kanjiTests.m; sourceTree = "<group>"; };
+		3A997ECE1563E35E003B81C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +219,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = 3A997E811563E1E5003B81C4;
 			productRefGroup = 3A997E8D1563E1E5003B81C4 /* Products */;
@@ -310,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A997EA51563E1E6003B81C4 /* en */,
+				3A997ECE1563E35E003B81C4 /* ja */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
