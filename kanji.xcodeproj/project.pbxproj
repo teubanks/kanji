@@ -26,6 +26,7 @@
 		3A997EC51563E1E6003B81C4 /* kanjiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EC41563E1E6003B81C4 /* kanjiTests.m */; };
 		3A997EE81565F514003B81C4 /* kanji-seed.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EE51565F514003B81C4 /* kanji-seed.csv */; };
 		3A997EE91565F514003B81C4 /* parseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EE71565F514003B81C4 /* parseCSV.m */; };
+		3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EF51565F5C5003B81C4 /* Resolve.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		3A997EE51565F514003B81C4 /* kanji-seed.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "kanji-seed.csv"; sourceTree = "<group>"; };
 		3A997EE61565F514003B81C4 /* parseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseCSV.h; sourceTree = "<group>"; };
 		3A997EE71565F514003B81C4 /* parseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseCSV.m; sourceTree = "<group>"; };
+		3A997EF41565F5C5003B81C4 /* Resolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resolve.h; sourceTree = "<group>"; };
+		3A997EF51565F5C5003B81C4 /* Resolve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resolve.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 			children = (
 				3A997EE61565F514003B81C4 /* parseCSV.h */,
 				3A997EE71565F514003B81C4 /* parseCSV.m */,
+				3A997EF41565F5C5003B81C4 /* Resolve.h */,
+				3A997EF51565F5C5003B81C4 /* Resolve.m */,
 			);
 			name = ParseCSV;
 			path = kanji;
@@ -297,6 +302,7 @@
 				3A997EAC1563E1E6003B81C4 /* MasterViewController.m in Sources */,
 				3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */,
 				3A997EE91565F514003B81C4 /* parseCSV.m in Sources */,
+				3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
