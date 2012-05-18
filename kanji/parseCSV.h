@@ -7,7 +7,7 @@
  * This source code is BSD-licensed, see LICENSE for the complete license.
  *
  */
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
 @interface CSVParser:NSObject {
 	int fileHandle;

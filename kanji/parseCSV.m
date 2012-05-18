@@ -212,7 +212,6 @@ static char *cstrstr(const char *haystack, const char needle) {
 						[csvContent addObject: csvLine];
 					}
 					csvLine = [NSMutableArray new];
-					[csvLine autorelease];
 				}
 				if (laststop != textp && (quoteCount % 2) == 0) {
 					[csvLine addObject: [self parseString:textp withLastStop:laststop]];
@@ -222,12 +221,10 @@ static char *cstrstr(const char *haystack, const char needle) {
 						[csvContent addObject: csvLine];
 					}
 					csvLine = [NSMutableArray new];
-					[csvLine autorelease];
 				} 
 				if ((*textp == '\0' || (quoteCount % 2) != 0) && lineBeginning != textp) {
 					lastLineBuffer = lineBeginning;
 					csvLine = [NSMutableArray new];
-					[csvLine autorelease];
 				}
 			}
 

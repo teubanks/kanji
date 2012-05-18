@@ -10,6 +10,8 @@
 
 #import "MasterViewController.h"
 
+#import "Resolve.h"
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -90,12 +92,28 @@
 // If the model doesn't already exist, it is created from the application's model.
 - (NSManagedObjectModel *)managedObjectModel
 {
-    if (__managedObjectModel != nil) {
-        return __managedObjectModel;
+  if (__managedObjectModel != nil) {
+      return __managedObjectModel;
+  }
+  NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"kanji" withExtension:@"momd"];
+  __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+  
+  NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+  // Edit the entity name as appropriate.
+  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+  [fetchRequest setEntity:entity];
+  NSManagedObjectContext *context = __managedObjectContext;
+  NSArray *kanji = [Resolve parseCSVFile:@"kanji-seed"];
+  NSArray *csvLine;
+  NSString *lineData;
+  for (csvLine in kanji) {
+    for(lineData in csvLine) {
+      NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
+      NSLog(lineData);
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"kanji" withExtension:@"momd"];
-    __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    return __managedObjectModel;
+  }
+  
+  return __managedObjectModel;
 }
 
 // Returns the persistent store coordinator for the application.
