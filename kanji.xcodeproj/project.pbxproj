@@ -24,7 +24,8 @@
 		3A997EBA1563E1E6003B81C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A997E961563E1E5003B81C4 /* CoreData.framework */; };
 		3A997EC21563E1E6003B81C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EC01563E1E6003B81C4 /* InfoPlist.strings */; };
 		3A997EC51563E1E6003B81C4 /* kanjiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EC41563E1E6003B81C4 /* kanjiTests.m */; };
-		3A997ED015642D5C003B81C4 /* kanji-seed in Resources */ = {isa = PBXBuildFile; fileRef = 3A997ECF15642D5C003B81C4 /* kanji-seed */; };
+		3A997EE81565F514003B81C4 /* kanji-seed.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EE51565F514003B81C4 /* kanji-seed.csv */; };
+		3A997EE91565F514003B81C4 /* parseCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EE71565F514003B81C4 /* parseCSV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,9 @@
 		3A997EC31563E1E6003B81C4 /* kanjiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kanjiTests.h; sourceTree = "<group>"; };
 		3A997EC41563E1E6003B81C4 /* kanjiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kanjiTests.m; sourceTree = "<group>"; };
 		3A997ECE1563E35E003B81C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3A997ECF15642D5C003B81C4 /* kanji-seed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "kanji-seed"; sourceTree = "<group>"; };
+		3A997EE51565F514003B81C4 /* kanji-seed.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "kanji-seed.csv"; sourceTree = "<group>"; };
+		3A997EE61565F514003B81C4 /* parseCSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseCSV.h; sourceTree = "<group>"; };
+		3A997EE71565F514003B81C4 /* parseCSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parseCSV.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3A997E981563E1E5003B81C4 /* kanji */,
+				3A997EEB1565F532003B81C4 /* ParseCSV */,
 				3A997EBD1563E1E6003B81C4 /* kanjiTests */,
 				3A997E8F1563E1E5003B81C4 /* Frameworks */,
 				3A997E8D1563E1E5003B81C4 /* Products */,
@@ -141,11 +145,11 @@
 		3A997E991563E1E5003B81C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A997EE51565F514003B81C4 /* kanji-seed.csv */,
 				3A997E9A1563E1E5003B81C4 /* kanji-Info.plist */,
 				3A997E9B1563E1E5003B81C4 /* InfoPlist.strings */,
 				3A997E9E1563E1E5003B81C4 /* main.m */,
 				3A997EA01563E1E5003B81C4 /* kanji-Prefix.pch */,
-				3A997ECF15642D5C003B81C4 /* kanji-seed */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,6 +171,16 @@
 				3A997EC01563E1E6003B81C4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A997EEB1565F532003B81C4 /* ParseCSV */ = {
+			isa = PBXGroup;
+			children = (
+				3A997EE61565F514003B81C4 /* parseCSV.h */,
+				3A997EE71565F514003B81C4 /* parseCSV.m */,
+			);
+			name = ParseCSV;
+			path = kanji;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +256,7 @@
 			files = (
 				3A997E9D1563E1E5003B81C4 /* InfoPlist.strings in Resources */,
 				3A997EA61563E1E6003B81C4 /* MainStoryboard.storyboard in Resources */,
-				3A997ED015642D5C003B81C4 /* kanji-seed in Resources */,
+				3A997EE81565F514003B81C4 /* kanji-seed.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +296,7 @@
 				3A997EA91563E1E6003B81C4 /* kanji.xcdatamodeld in Sources */,
 				3A997EAC1563E1E6003B81C4 /* MasterViewController.m in Sources */,
 				3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */,
+				3A997EE91565F514003B81C4 /* parseCSV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +467,7 @@
 				3A997ECA1563E1E6003B81C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A997ECB1563E1E6003B81C4 /* Build configuration list for PBXNativeTarget "kanjiTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +476,7 @@
 				3A997ECD1563E1E6003B81C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
