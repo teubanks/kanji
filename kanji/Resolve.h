@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Resolve : NSObject
-  + (NSArray *)parseCSVFile:(NSString *)csvFileName;
+  + (NSArray *)parseJSONFile:(NSString *)jsonFileName;
 
 @end

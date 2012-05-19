@@ -17,6 +17,7 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+BOOL _databaseExists = false;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -96,26 +97,28 @@
   }
   NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"kanji" withExtension:@"momd"];
   __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+  return __managedObjectModel;
+}
+
+- (void)seedDatabase {
   
   NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
   // Edit the entity name as appropriate.
   NSEntityDescription *entity = [NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:self.managedObjectContext];
   [fetchRequest setEntity:entity];
   NSManagedObjectContext *context = __managedObjectContext;
-  NSArray *kanji = [Resolve parseCSVFile:@"kanji-seed"];
-  NSArray *csvLine;
+  NSArray *kanji = [Resolve parseJSONFile:@"kanji-seed"];
+  NSDictionary *jsonLine;
   NSDictionary *properties;
-  for (csvLine in kanji) {
-    properties = [NSDictionary dictionaryWithObjectsAndKeys:
-                  [csvLine objectAtIndex:3], @"english",
-                  [csvLine objectAtIndex:0], @"kanji",   
-                  [csvLine objectAtIndex:1], @"onyomi",  
-                  [csvLine objectAtIndex:2], @"kunyomi",
-                  nil];
-    [Kanji insertNewKanjiWithProperties:properties inManagedObjectContext:context];
+  for (jsonLine in kanji) {
+//    properties = [NSDictionary dictionaryWithObjectsAndKeys:
+//                  [csvLine objectAtIndex:3], @"english",
+//                  [csvLine objectAtIndex:0], @"kanji",   
+//                  [csvLine objectAtIndex:1], @"onyomi",  
+//                  [csvLine objectAtIndex:2], @"kunyomi",
+//                  nil];
+    [Kanji insertNewKanjiWithProperties:jsonLine inManagedObjectContext:context];
   }
-  
-  return __managedObjectModel;
 }
 
 // Returns the persistent store coordinator for the application.

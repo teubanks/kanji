@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+  BOOL _databaseExists;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

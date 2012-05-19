@@ -10,14 +10,14 @@
 
 @implementation Resolve
 
-  + (NSArray *)parseCSVFile:(NSString *)csvFileName{
-    NSString *csvFilePath = [[NSBundle mainBundle] pathForResource:csvFileName ofType:@"csv"];
-    NSInputStream *fileContents = [NSInputStream inputStreamWithFileAtPath:csvFilePath];
+  + (NSArray *)parseJSONFile:(NSString *)jsonFileName{
+    NSString *jsonFilePath = [[NSBundle mainBundle] pathForResource:jsonFileName ofType:@"json"];
+    NSInputStream *fileContents = [NSInputStream inputStreamWithFileAtPath:jsonFilePath];
     [fileContents open];
     
     NSError *jsonError;
     id results = [NSJSONSerialization JSONObjectWithStream:fileContents options:NSJSONReadingMutableContainers error:&jsonError];
-    
+    [fileContents close];
     return results;
   }
 @end
