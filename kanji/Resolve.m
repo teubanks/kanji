@@ -7,20 +7,17 @@
 //
 
 #import "Resolve.h"
-#import "parseCSV.h"
 
 @implementation Resolve
 
   + (NSArray *)parseCSVFile:(NSString *)csvFileName{
-    
-    CSVParser *parser = [CSVParser new];
-    //get the path to the file in your xcode project's resource path 
     NSString *csvFilePath = [[NSBundle mainBundle] pathForResource:csvFileName ofType:@"csv"];
-    [parser openFile:csvFilePath];
+    NSInputStream *fileContents = [NSInputStream inputStreamWithFileAtPath:csvFilePath];
+    [fileContents open];
     
-    NSMutableArray *csvContent = [parser parseFile];
+    NSError *jsonError;
+    id results = [NSJSONSerialization JSONObjectWithStream:fileContents options:NSJSONReadingMutableContainers error:&jsonError];
     
-    [parser closeFile];
-    return csvContent;
+    return results;
   }
 @end

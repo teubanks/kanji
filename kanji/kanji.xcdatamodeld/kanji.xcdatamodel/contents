@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Event">
+    <entity name="Kanji" representedClassName="Kanji">
         <attribute name="english" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="kanji" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="kunyomi" optional="YES" attributeType="String" syncable="YES"/>
@@ -8,6 +8,6 @@
         <attribute name="romaji" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="261" positionY="189" width="128" height="120"/>
+        <element name="Kanji" positionX="261" positionY="189" width="128" height="120"/>
     </elements>
 </model>

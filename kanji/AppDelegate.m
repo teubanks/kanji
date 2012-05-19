@@ -7,10 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
 #import "MasterViewController.h"
-
 #import "Resolve.h"
+#import "Kanji.h"
 
 @implementation AppDelegate
 
@@ -100,17 +99,20 @@
   
   NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
   // Edit the entity name as appropriate.
-  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:self.managedObjectContext];
   [fetchRequest setEntity:entity];
   NSManagedObjectContext *context = __managedObjectContext;
   NSArray *kanji = [Resolve parseCSVFile:@"kanji-seed"];
   NSArray *csvLine;
-  NSString *lineData;
+  NSDictionary *properties;
   for (csvLine in kanji) {
-    for(lineData in csvLine) {
-      NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-      NSLog(lineData);
-    }
+    properties = [NSDictionary dictionaryWithObjectsAndKeys:
+                  [csvLine objectAtIndex:3], @"english",
+                  [csvLine objectAtIndex:0], @"kanji",   
+                  [csvLine objectAtIndex:1], @"onyomi",  
+                  [csvLine objectAtIndex:2], @"kunyomi",
+                  nil];
+    [Kanji insertNewKanjiWithProperties:properties inManagedObjectContext:context];
   }
   
   return __managedObjectModel;
