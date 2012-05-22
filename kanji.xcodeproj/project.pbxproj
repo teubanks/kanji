@@ -16,7 +16,7 @@
 		3A997EA31563E1E5003B81C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EA21563E1E5003B81C4 /* AppDelegate.m */; };
 		3A997EA61563E1E6003B81C4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EA41563E1E6003B81C4 /* MainStoryboard.storyboard */; };
 		3A997EA91563E1E6003B81C4 /* kanji.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EA71563E1E6003B81C4 /* kanji.xcdatamodeld */; };
-		3A997EAC1563E1E6003B81C4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EAB1563E1E6003B81C4 /* MasterViewController.m */; };
+		3A997EAC1563E1E6003B81C4 /* KanjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */; };
 		3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EAE1563E1E6003B81C4 /* DetailViewController.m */; };
 		3A997EB71563E1E6003B81C4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A997EB61563E1E6003B81C4 /* SenTestingKit.framework */; };
 		3A997EB81563E1E6003B81C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A997E901563E1E5003B81C4 /* UIKit.framework */; };
@@ -27,6 +27,7 @@
 		3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EF51565F5C5003B81C4 /* Resolve.m */; };
 		3A997EFA15668C23003B81C4 /* Kanji.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EF915668C22003B81C4 /* Kanji.m */; };
 		3A997EFD1567EDCA003B81C4 /* kanji-seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EFC1567EDCA003B81C4 /* kanji-seed.json */; };
+		3A9A6F6D156B36160077857F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F6C156B36160077857F /* MasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,8 @@
 		3A997EA21563E1E5003B81C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3A997EA51563E1E6003B81C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3A997EA81563E1E6003B81C4 /* kanji.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kanji.xcdatamodel; sourceTree = "<group>"; };
-		3A997EAA1563E1E6003B81C4 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		3A997EAB1563E1E6003B81C4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		3A997EAA1563E1E6003B81C4 /* KanjiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanjiViewController.h; sourceTree = "<group>"; };
+		3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanjiViewController.m; sourceTree = "<group>"; };
 		3A997EAD1563E1E6003B81C4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3A997EAE1563E1E6003B81C4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3A997EB51563E1E6003B81C4 /* kanjiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kanjiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +70,8 @@
 		3A997EF815668C22003B81C4 /* Kanji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kanji.h; sourceTree = "<group>"; };
 		3A997EF915668C22003B81C4 /* Kanji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kanji.m; sourceTree = "<group>"; };
 		3A997EFC1567EDCA003B81C4 /* kanji-seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kanji-seed.json"; sourceTree = "<group>"; };
+		3A9A6F6B156B36160077857F /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
+		3A9A6F6C156B36160077857F /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +139,10 @@
 				3A997EA11563E1E5003B81C4 /* AppDelegate.h */,
 				3A997EA21563E1E5003B81C4 /* AppDelegate.m */,
 				3A997EA41563E1E6003B81C4 /* MainStoryboard.storyboard */,
-				3A997EAA1563E1E6003B81C4 /* MasterViewController.h */,
-				3A997EAB1563E1E6003B81C4 /* MasterViewController.m */,
+				3A997EAA1563E1E6003B81C4 /* KanjiViewController.h */,
+				3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */,
+				3A9A6F6B156B36160077857F /* MasterViewController.h */,
+				3A9A6F6C156B36160077857F /* MasterViewController.m */,
 				3A997EAD1563E1E6003B81C4 /* DetailViewController.h */,
 				3A997EAE1563E1E6003B81C4 /* DetailViewController.m */,
 				3A997EA71563E1E6003B81C4 /* kanji.xcdatamodeld */,
@@ -307,10 +312,11 @@
 				3A997E9F1563E1E5003B81C4 /* main.m in Sources */,
 				3A997EA31563E1E5003B81C4 /* AppDelegate.m in Sources */,
 				3A997EA91563E1E6003B81C4 /* kanji.xcdatamodeld in Sources */,
-				3A997EAC1563E1E6003B81C4 /* MasterViewController.m in Sources */,
+				3A997EAC1563E1E6003B81C4 /* KanjiViewController.m in Sources */,
 				3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */,
 				3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */,
 				3A997EFA15668C23003B81C4 /* Kanji.m in Sources */,
+				3A9A6F6D156B36160077857F /* MasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
