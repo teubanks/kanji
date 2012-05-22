@@ -15,7 +15,10 @@
 @implementation DetailViewController
 
 @synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize kanjiLabel = _kanjiLabel;
+@synthesize onyomiLabel = _onyomiLabel;
+@synthesize kunyomiLabel = _kunyomiLabel;
+@synthesize englishLabel = _englishLabel;
 
 #pragma mark - Managing the detail item
 
@@ -34,7 +37,11 @@
     // Update the user interface for the detail item.
 
   if (self.detailItem) {
-      self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"kanji"] description];
+    self.kanjiLabel.text = [[self.detailItem valueForKey:@"kanji"] description];
+    self.onyomiLabel.text = [[self.detailItem valueForKey:@"onyomi"] description];
+    self.kunyomiLabel.text = [[self.detailItem valueForKey:@"kunyomi"] description];
+    self.englishLabel.text = [[self.detailItem valueForKey:@"english"] description];
+    
   }
 }
 
@@ -49,7 +56,10 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-  self.detailDescriptionLabel = nil;
+  self.kanjiLabel = nil;
+  self.onyomiLabel = nil;
+  self.kunyomiLabel = nil;
+  self.englishLabel = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

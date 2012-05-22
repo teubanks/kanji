@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KanjiViewController.h"
 #import "MasterViewController.h"
 #import "Resolve.h"
 #import "Kanji.h"
@@ -17,15 +18,17 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
-BOOL _databaseExists = false;
+BOOL _databaseExists = NO;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+  // Override point for customization after application launch.
   UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-  MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-  controller.managedObjectContext = self.managedObjectContext;
-    return YES;
+  MasterViewController *masterController = (MasterViewController *)navigationController.topViewController;
+  masterController.managedObjectContext = self.managedObjectContext;
+  
+  [self seedDatabase];
+  return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -101,7 +104,9 @@ BOOL _databaseExists = false;
 }
 
 - (void)seedDatabase {
-  
+  if(_databaseExists == YES){
+    return;
+  }
   NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
   // Edit the entity name as appropriate.
   NSEntityDescription *entity = [NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:self.managedObjectContext];
@@ -125,7 +130,14 @@ BOOL _databaseExists = false;
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
-    if (__persistentStoreCoordinator != nil) {
+  NSFileManager *fileManager = [[NSFileManager alloc] init];
+  NSString *storePath = [[self applicationDocumentsDirectory] path];
+  storePath = [storePath stringByAppendingString:@"/kanji.sqlite"];
+  BOOL fileExists = [fileManager fileExistsAtPath:storePath];
+  if(fileExists) {
+    _databaseExists = YES;
+  }
+  if (__persistentStoreCoordinator != nil) {
         return __persistentStoreCoordinator;
     }
     
@@ -161,7 +173,7 @@ BOOL _databaseExists = false;
         abort();
     }    
     
-    return __persistentStoreCoordinator;
+  return __persistentStoreCoordinator;
 }
 
 #pragma mark - Application's Documents directory

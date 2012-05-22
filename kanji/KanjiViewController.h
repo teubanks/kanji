@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  KanjiViewController.h
 //  kanji
 //
 //  Created by MoneyDesktop on 5/16/12.
@@ -10,7 +10,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface KanjiViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) id detailItem;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) IBOutlet UILabel *kanjiLabel;
+@property (strong, nonatomic) IBOutlet UILabel *onyomiLabel;
+@property (strong, nonatomic) IBOutlet UILabel *kunyomiLabel;
+@property (strong, nonatomic) IBOutlet UILabel *englishLabel;
 
 @end
