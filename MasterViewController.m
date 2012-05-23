@@ -82,8 +82,8 @@
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
   if([[segue identifier] isEqualToString:@"showKanji"]){
-    KanjiViewController *kanjiController = (KanjiViewController *)[segue destinationViewController];
-    kanjiController.managedObjectContext = self.managedObjectContext;
+    kanjiViewController = (KanjiViewController *)[segue destinationViewController];
+    kanjiViewController.managedObjectContext = self.managedObjectContext;
 //    kanjiController.delegate = self;
   }
 }
@@ -119,17 +119,17 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-  kanjiViewController = [KanjiViewController alloc];
-     // ...
-     // Pass the selected object to the new view controller.
-  kanjiViewController.managedObjectContext = self.managedObjectContext;
-  kanjiViewController = [kanjiViewController init];
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//  kanjiViewController = [KanjiViewController alloc];
+//     // ...
+//     // Pass the selected object to the new view controller.
+//  kanjiViewController.managedObjectContext = self.managedObjectContext;
+//  kanjiViewController = [kanjiViewController init];
   // Navigation logic may go here. Create and push another view controller.
      // ...
      // Pass the selected object to the new view controller.
-  [self.navigationController pushViewController:kanjiViewController animated:YES];
-}
+//  [self.navigationController pushViewController:kanjiViewController animated:YES];
+//}
 
 @end
