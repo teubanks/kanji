@@ -28,6 +28,13 @@
 		3A997EFA15668C23003B81C4 /* Kanji.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EF915668C22003B81C4 /* Kanji.m */; };
 		3A997EFD1567EDCA003B81C4 /* kanji-seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EFC1567EDCA003B81C4 /* kanji-seed.json */; };
 		3A9A6F6D156B36160077857F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F6C156B36160077857F /* MasterViewController.m */; };
+		3A9A6F72156D22230077857F /* 2000px-書.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F71156D22230077857F /* 2000px-書.png */; };
+		3A9A6F74156D22410077857F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F73156D22410077857F /* Default.png */; };
+		3A9A6F76156D22670077857F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F75156D22670077857F /* Default@2x.png */; };
+		3A9A6F78156D24E10077857F /* icon.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F77156D24E00077857F /* icon.xcf */; };
+		3A9A6F7A156D25040077857F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F79156D25040077857F /* icon.png */; };
+		3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7B156D254A0077857F /* icon-retina.png */; };
+		3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7F156D6A120077857F /* icon-retina2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,13 @@
 		3A997EFC1567EDCA003B81C4 /* kanji-seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kanji-seed.json"; sourceTree = "<group>"; };
 		3A9A6F6B156B36160077857F /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		3A9A6F6C156B36160077857F /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
+		3A9A6F71156D22230077857F /* 2000px-書.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-書.png"; sourceTree = "<group>"; };
+		3A9A6F73156D22410077857F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3A9A6F75156D22670077857F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3A9A6F77156D24E00077857F /* icon.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.xcf; sourceTree = "<group>"; };
+		3A9A6F79156D25040077857F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3A9A6F7B156D254A0077857F /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina.png"; sourceTree = "<group>"; };
+		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,12 @@
 		3A997E811563E1E5003B81C4 = {
 			isa = PBXGroup;
 			children = (
+				3A9A6F7F156D6A120077857F /* icon-retina2.png */,
+				3A9A6F7B156D254A0077857F /* icon-retina.png */,
+				3A9A6F79156D25040077857F /* icon.png */,
+				3A9A6F77156D24E00077857F /* icon.xcf */,
+				3A9A6F75156D22670077857F /* Default@2x.png */,
+				3A9A6F73156D22410077857F /* Default.png */,
 				3A997EFB15668C2A003B81C4 /* Models */,
 				3A997E981563E1E5003B81C4 /* kanji */,
 				3A997EEB1565F532003B81C4 /* ParseCSV */,
@@ -154,6 +174,7 @@
 		3A997E991563E1E5003B81C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A9A6F71156D22230077857F /* 2000px-書.png */,
 				3A997E9A1563E1E5003B81C4 /* kanji-Info.plist */,
 				3A997E9B1563E1E5003B81C4 /* InfoPlist.strings */,
 				3A997EFC1567EDCA003B81C4 /* kanji-seed.json */,
@@ -275,6 +296,13 @@
 				3A997E9D1563E1E5003B81C4 /* InfoPlist.strings in Resources */,
 				3A997EA61563E1E6003B81C4 /* MainStoryboard.storyboard in Resources */,
 				3A997EFD1567EDCA003B81C4 /* kanji-seed.json in Resources */,
+				3A9A6F72156D22230077857F /* 2000px-書.png in Resources */,
+				3A9A6F74156D22410077857F /* Default.png in Resources */,
+				3A9A6F76156D22670077857F /* Default@2x.png in Resources */,
+				3A9A6F78156D24E10077857F /* icon.xcf in Resources */,
+				3A9A6F7A156D25040077857F /* icon.png in Resources */,
+				3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */,
+				3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,8 +447,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -432,8 +462,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
