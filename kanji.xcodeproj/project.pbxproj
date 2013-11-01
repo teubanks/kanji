@@ -36,6 +36,7 @@
 		3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7B156D254A0077857F /* icon-retina.png */; };
 		3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7F156D6A120077857F /* icon-retina2.png */; };
 		3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F86156F20C30077857F /* KatakanaViewController.m */; };
+		ADBA628A18241C0E00E74E46 /* radicals.json in Resources */ = {isa = PBXBuildFile; fileRef = ADBA628918241C0E00E74E46 /* radicals.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina2.png"; sourceTree = "<group>"; };
 		3A9A6F85156F20C20077857F /* KatakanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KatakanaViewController.h; sourceTree = "<group>"; };
 		3A9A6F86156F20C30077857F /* KatakanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KatakanaViewController.m; sourceTree = "<group>"; };
+		ADBA628918241C0E00E74E46 /* radicals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = radicals.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				3A997EFC1567EDCA003B81C4 /* kanji-seed.json */,
 				3A997E9E1563E1E5003B81C4 /* main.m */,
 				3A997EA01563E1E5003B81C4 /* kanji-Prefix.pch */,
+				ADBA628918241C0E00E74E46 /* radicals.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				3A9A6F7A156D25040077857F /* icon.png in Resources */,
 				3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */,
 				3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */,
+				ADBA628A18241C0E00E74E46 /* radicals.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

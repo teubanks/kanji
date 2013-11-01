@@ -106,7 +106,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NSLog(@"row is %i", indexPath.row);
+    NSLog(@"row is %i", indexPath.row);
     UIViewController *vc = nil;
     
     if (indexPath.row == 0) {
