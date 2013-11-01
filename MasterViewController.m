@@ -8,9 +8,11 @@
 
 #import "MasterViewController.h"
 #import "KanjiViewController.h"
+#import "KatakanaViewController.h"
 
 @interface MasterViewController (){
-  KanjiViewController *kanjiViewController;
+  KanjiViewController    *kanjiViewController;
+  KatakanaViewController *katakanaViewController;
 }
 
 @end
@@ -61,75 +63,59 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return [[self tableCells] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+  static NSString *CellIdentifier = @"Cell";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = @"Kanji";
-    
-    return cell;
-}
-
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return NO;
-}
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-  if([[segue identifier] isEqualToString:@"showKanji"]){
-    kanjiViewController = (KanjiViewController *)[segue destinationViewController];
-    kanjiViewController.managedObjectContext = self.managedObjectContext;
-//    kanjiController.delegate = self;
+  NSArray *cells = [self tableCells];
+  if(cell == nil){
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
   }
+    
+  NSString *cellName = [cells objectAtIndex:indexPath.row];
+  cell.textLabel.text = cellName;
+  
+  return cell;
 }
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
+- (NSArray *)tableCells {
+  NSArray *cells = [[NSArray alloc] initWithObjects:@"Kanji", @"Katakana", nil];
+  return cells;
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//  NSLog([segue identifier]);
+//  if([[segue identifier] isEqualToString:@"showKanji"]){
+//    kanjiViewController = (KanjiViewController *)[segue destinationViewController];
+//    kanjiViewController.managedObjectContext = self.managedObjectContext;
+////    kanjiController.delegate = self;
+//  } else if([[segue identifier] isEqualToString:@"showKatakana"]) {
+//    katakanaViewController = (KatakanaViewController *)[segue destinationViewController];
+//  }
+//}
+
+-(void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+  
 }
-*/
 
 #pragma mark - Table view delegate
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//  kanjiViewController = [KanjiViewController alloc];
-//     // ...
-//     // Pass the selected object to the new view controller.
-//  kanjiViewController.managedObjectContext = self.managedObjectContext;
-//  kanjiViewController = [kanjiViewController init];
-  // Navigation logic may go here. Create and push another view controller.
-     // ...
-     // Pass the selected object to the new view controller.
-//  [self.navigationController pushViewController:kanjiViewController animated:YES];
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSLog(@"row is %i", indexPath.row);
+    UIViewController *vc = nil;
+    
+    if (indexPath.row == 0) {
+        vc = [[KanjiViewController alloc] init];
+        ((KanjiViewController *)vc).managedObjectContext = [self managedObjectContext];
+    } else {
+        vc = [[KatakanaViewController alloc] init];
+    }
+  [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

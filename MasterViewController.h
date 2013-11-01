@@ -11,4 +11,5 @@
 @interface MasterViewController : UITableViewController
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+- (NSArray *)tableCells;
 @end

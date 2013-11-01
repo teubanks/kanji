@@ -35,6 +35,7 @@
 		3A9A6F7A156D25040077857F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F79156D25040077857F /* icon.png */; };
 		3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7B156D254A0077857F /* icon-retina.png */; };
 		3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7F156D6A120077857F /* icon-retina2.png */; };
+		3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F86156F20C30077857F /* KatakanaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		3A9A6F79156D25040077857F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3A9A6F7B156D254A0077857F /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina.png"; sourceTree = "<group>"; };
 		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina2.png"; sourceTree = "<group>"; };
+		3A9A6F85156F20C20077857F /* KatakanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KatakanaViewController.h; sourceTree = "<group>"; };
+		3A9A6F86156F20C30077857F /* KatakanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KatakanaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				3A9A6F6C156B36160077857F /* MasterViewController.m */,
 				3A997EAD1563E1E6003B81C4 /* DetailViewController.h */,
 				3A997EAE1563E1E6003B81C4 /* DetailViewController.m */,
+				3A9A6F85156F20C20077857F /* KatakanaViewController.h */,
+				3A9A6F86156F20C30077857F /* KatakanaViewController.m */,
 				3A997EA71563E1E6003B81C4 /* kanji.xcdatamodeld */,
 				3A997E991563E1E5003B81C4 /* Supporting Files */,
 			);
@@ -345,6 +350,7 @@
 				3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */,
 				3A997EFA15668C23003B81C4 /* Kanji.m in Sources */,
 				3A9A6F6D156B36160077857F /* MasterViewController.m in Sources */,
+				3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
