@@ -140,10 +140,15 @@ BOOL _databaseExists = NO;
   if (__persistentStoreCoordinator != nil) {
         return __persistentStoreCoordinator;
     }
-    
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"kanji.sqlite"];
-    
+
     NSError *error = nil;
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"kanji.sqlite"];
+    [storeURL setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:&error];
+    if(error){
+        NSLog(@"ran into problems excluding database from iCloud");
+    }
+    error = nil;
+
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         /*
