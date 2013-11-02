@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Kanji" representedClassName="Kanji">
         <attribute name="english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="jlptNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="kanji" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="kunyomi" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="onyomi" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="romaji" optional="YES" attributeType="String" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <entity name="Radical" representedClassName="Radical" syncable="YES">
+        <attribute name="character" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="english" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hiragana" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="strokeCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Kanji" positionX="261" positionY="189" width="128" height="120"/>
+        <element name="Kanji" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Radical" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

@@ -104,26 +104,32 @@ BOOL _databaseExists = NO;
 }
 
 - (void)seedDatabase {
-  if(_databaseExists == YES){
-    return;
-  }
-  NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-  // Edit the entity name as appropriate.
-  NSEntityDescription *entity = [NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:self.managedObjectContext];
-  [fetchRequest setEntity:entity];
-  NSManagedObjectContext *context = __managedObjectContext;
-  NSArray *kanji = [Resolve parseJSONFile:@"kanji-seed"];
-  NSDictionary *jsonLine;
-  NSDictionary *properties;
-  for (jsonLine in kanji) {
-//    properties = [NSDictionary dictionaryWithObjectsAndKeys:
-//                  [csvLine objectAtIndex:3], @"english",
-//                  [csvLine objectAtIndex:0], @"kanji",   
-//                  [csvLine objectAtIndex:1], @"onyomi",  
-//                  [csvLine objectAtIndex:2], @"kunyomi",
-//                  nil];
-    [Kanji insertNewKanjiWithProperties:jsonLine inManagedObjectContext:context];
-  }
+    if(_databaseExists == YES){
+        return;
+    }
+    NSManagedObjectContext *context = __managedObjectContext;
+
+    // Seed Kanji entity
+    NSFetchRequest *kanjiFetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *kanjiEntity = [NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:self.managedObjectContext];
+    [kanjiFetchRequest setEntity:kanjiEntity];
+    NSArray *kanji = [Resolve parseJSONFile:@"kanji-seed"];
+    NSDictionary *jsonLine;
+    for (jsonLine in kanji) {
+        [Kanji insertNewKanjiWithProperties:jsonLine inManagedObjectContext:context];
+    }
+
+
+    // Seed Radical entity
+    NSFetchRequest *radicalFetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *radicalEntity = [NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:self.managedObjectContext];
+    [radicalFetchRequest setEntity:radicalEntity];
+    NSArray *radicals = [Resolve parseJSONFile:@"radicals"];
+    for (jsonLine in radicals) {
+        [Kanji insertNewKanjiWithProperties:jsonLine inManagedObjectContext:context];
+    }
 }
 
 // Returns the persistent store coordinator for the application.

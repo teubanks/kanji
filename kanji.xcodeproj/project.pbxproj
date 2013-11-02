@@ -37,6 +37,7 @@
 		3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7F156D6A120077857F /* icon-retina2.png */; };
 		3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F86156F20C30077857F /* KatakanaViewController.m */; };
 		ADBA628A18241C0E00E74E46 /* radicals.json in Resources */ = {isa = PBXBuildFile; fileRef = ADBA628918241C0E00E74E46 /* radicals.json */; };
+		ADBA6290182463F700E74E46 /* Radical.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA628F182463F700E74E46 /* Radical.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		3A9A6F85156F20C20077857F /* KatakanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KatakanaViewController.h; sourceTree = "<group>"; };
 		3A9A6F86156F20C30077857F /* KatakanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KatakanaViewController.m; sourceTree = "<group>"; };
 		ADBA628918241C0E00E74E46 /* radicals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = radicals.json; sourceTree = "<group>"; };
+		ADBA628E182463F700E74E46 /* Radical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Radical.h; path = kanji/models/Radical.h; sourceTree = "<group>"; };
+		ADBA628F182463F700E74E46 /* Radical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Radical.m; path = kanji/models/Radical.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +229,8 @@
 			children = (
 				3A997EF815668C22003B81C4 /* Kanji.h */,
 				3A997EF915668C22003B81C4 /* Kanji.m */,
+				ADBA628E182463F700E74E46 /* Radical.h */,
+				ADBA628F182463F700E74E46 /* Radical.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 			files = (
 				3A997E9F1563E1E5003B81C4 /* main.m in Sources */,
 				3A997EA31563E1E5003B81C4 /* AppDelegate.m in Sources */,
+				ADBA6290182463F700E74E46 /* Radical.m in Sources */,
 				3A997EA91563E1E6003B81C4 /* kanji.xcdatamodeld in Sources */,
 				3A997EAC1563E1E6003B81C4 /* KanjiViewController.m in Sources */,
 				3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */,
