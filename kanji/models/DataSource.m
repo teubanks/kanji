@@ -9,6 +9,11 @@
 #import "DataSource.h"
 #import "Kanji.h"
 #import "Radical.h"
+#import "KanjiCell.h"
+#import "RadicalCell.h"
+
+NSString *kanjiCellID = @"KanjiCell";
+NSString *radicalCellID = @"RadicalCell";
 
 @implementation DataSource
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -24,6 +29,12 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-
+    if(indexPath.section == 1){
+        KanjiCell *cell = (KanjiCell*)[collectionView dequeueReusableCellWithReuseIdentifier:kanjiCellID forIndexPath:indexPath];
+        return cell;
+    } else {
+        RadicalCell *cell = (RadicalCell*)[collectionView dequeueReusableCellWithReuseIdentifier:radicalCellID forIndexPath:indexPath];
+        return cell;
+    }
 }
 @end

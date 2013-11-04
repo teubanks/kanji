@@ -108,13 +108,14 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>
                         <connections>
-                            <outlet property="dataSource" destination="DN2-OG-Ok0" id="lds-Le-6Dd"/>
+                            <outlet property="dataSource" destination="TPp-sF-VPN" id="VZR-rn-ace"/>
                             <outlet property="delegate" destination="DN2-OG-Ok0" id="BcB-n3-kkT"/>
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="hWg-vT-lCJ"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKv-lX-Hp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="TPp-sF-VPN" customClass="DataSource"/>
             </objects>
             <point key="canvasLocation" x="-343" y="71"/>
         </scene>
