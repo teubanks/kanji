@@ -39,8 +39,16 @@
     return result;
 }
 
-+(NSNumber *)numberOfKanjisInContext:(NSManagedObjectContext *)managedObjectContext {
-    
++(NSUInteger)numberOfKanjisInContext:(NSManagedObjectContext *)managedObjectContext {
+    NSFetchRequest *countRequest = [[NSFetchRequest alloc] init];
+    [countRequest setEntity:[NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:managedObjectContext]];
+    [countRequest setIncludesSubentities:NO];
+    NSError *countError = nil;
+    NSUInteger count = [managedObjectContext countForFetchRequest:countRequest error:&countError];
+    if(count == NSNotFound)
+        return 0;
+
+    return count;
 }
 
 @end

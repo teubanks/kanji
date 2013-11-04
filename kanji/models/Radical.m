@@ -40,7 +40,15 @@
     return result;
 }
 
-+(NSNumber *)numberOfRadicalsInContext:(NSManagedObjectContext *)managedObjectContext {
-    
++(NSUInteger)numberOfRadicalsInContext:(NSManagedObjectContext *)managedObjectContext {
+    NSFetchRequest *countRequest = [[NSFetchRequest alloc] init];
+    [countRequest setEntity:[NSEntityDescription entityForName:@"Radical" inManagedObjectContext:managedObjectContext]];
+    [countRequest setIncludesSubentities:NO];
+    NSError *countError = nil;
+    NSUInteger count = [managedObjectContext countForFetchRequest:countRequest error:&countError];
+    if(count == NSNotFound)
+        return 0;
+
+    return count;
 }
 @end

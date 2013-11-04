@@ -19,5 +19,5 @@
 @property (nonatomic, retain) NSString * romaji;
 
 + (Kanji *)insertNewKanjiWithProperties:(NSDictionary *)properties inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
-+(NSNumber*)numberOfKanjisInContext:(NSManagedObjectContext*)managedObjectContext;
++(NSUInteger)numberOfKanjisInContext:(NSManagedObjectContext*)managedObjectContext;
 @end

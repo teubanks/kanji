@@ -18,5 +18,5 @@
 @property (nonatomic, retain) NSNumber * position;
 @property (nonatomic, retain) NSNumber * strokeCount;
 
-+(NSNumber*)numberOfRadicalsInContext:(NSManagedObjectContext*)managedObjectContext;
++(NSUInteger)numberOfRadicalsInContext:(NSManagedObjectContext*)managedObjectContext;
 @end
