@@ -11,9 +11,12 @@
 #import "Radical.h"
 #import "KanjiCell.h"
 #import "RadicalCell.h"
+#import "HeaderView.h"
 
 NSString *kanjiCellID = @"KanjiCell";
 NSString *radicalCellID = @"RadicalCell";
+NSString *kanjiHeaderID = @"KanjiHeader";
+NSString *radicalHeaderID = @"RadicalHeader";
 
 @implementation DataSource
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -36,5 +39,19 @@ NSString *radicalCellID = @"RadicalCell";
         RadicalCell *cell = (RadicalCell*)[collectionView dequeueReusableCellWithReuseIdentifier:radicalCellID forIndexPath:indexPath];
         return cell;
     }
+}
+
+-(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    HeaderView *sectionHeader = nil;
+    if(kind == UICollectionElementKindSectionHeader){
+        if(indexPath.section == 0){
+            sectionHeader = (HeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kanjiHeaderID forIndexPath:indexPath];
+            [sectionHeader.headerTitleLabel setText:@"JLPT Level 5"];
+        } else {
+            sectionHeader = (HeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kanjiHeaderID forIndexPath:indexPath];
+            [sectionHeader.headerTitleLabel setText:@"Radicals"];
+        }
+    }
+    return sectionHeader;
 }
 @end
