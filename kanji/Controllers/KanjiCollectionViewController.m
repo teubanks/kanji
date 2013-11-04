@@ -7,6 +7,7 @@
 //
 
 #import "KanjiCollectionViewController.h"
+#import "DataSource.h"
 
 @interface KanjiCollectionViewController ()
 
@@ -18,8 +19,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self.collectionView setDelegate:nil];
-        [self.collectionView setDataSource:nil];
+        DataSource *dataSource = [[DataSource alloc] init];
+        [self.collectionView setDataSource:dataSource];
     }
     return self;
 }

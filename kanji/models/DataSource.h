@@ -1,0 +1,13 @@
+//
+//  DataSource.h
+//  kanji
+//
+//  Created by Tracey Eubanks on 11/4/13.
+//
+//
+
+#import <Foundation/Foundation.h>
+
+@interface DataSource : NSObject <UICollectionViewDataSource>
+
+@end

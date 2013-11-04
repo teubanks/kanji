@@ -41,6 +41,7 @@
 		ADBA62941825853300E74E46 /* KanjiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */; };
 		ADBA62991828408400E74E46 /* KanjiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA62981828408400E74E46 /* KanjiCell.m */; };
 		ADBA629C1828409400E74E46 /* RadicalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA629B1828409400E74E46 /* RadicalCell.m */; };
+		ADBA629F1828418000E74E46 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA629E1828418000E74E46 /* DataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		ADBA62981828408400E74E46 /* KanjiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiCell.m; path = views/KanjiCell.m; sourceTree = "<group>"; };
 		ADBA629A1828409400E74E46 /* RadicalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadicalCell.h; path = views/RadicalCell.h; sourceTree = "<group>"; };
 		ADBA629B1828409400E74E46 /* RadicalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RadicalCell.m; path = views/RadicalCell.m; sourceTree = "<group>"; };
+		ADBA629D1828418000E74E46 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataSource.h; path = kanji/models/DataSource.h; sourceTree = "<group>"; };
+		ADBA629E1828418000E74E46 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataSource.m; path = kanji/models/DataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 				3A997EF915668C22003B81C4 /* Kanji.m */,
 				ADBA628E182463F700E74E46 /* Radical.h */,
 				ADBA628F182463F700E74E46 /* Radical.m */,
+				ADBA629D1828418000E74E46 /* DataSource.h */,
+				ADBA629E1828418000E74E46 /* DataSource.m */,
 			);
 			name = Models;
 			path = ..;
@@ -395,6 +400,7 @@
 				3A997EA31563E1E5003B81C4 /* AppDelegate.m in Sources */,
 				ADBA6290182463F700E74E46 /* Radical.m in Sources */,
 				3A997EA91563E1E6003B81C4 /* kanji.xcdatamodeld in Sources */,
+				ADBA629F1828418000E74E46 /* DataSource.m in Sources */,
 				3A997EAC1563E1E6003B81C4 /* KanjiViewController.m in Sources */,
 				3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */,
 				3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */,
