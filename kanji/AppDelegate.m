@@ -23,10 +23,10 @@ BOOL _databaseExists = NO;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // Override point for customization after application launch.
-  UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-  MasterViewController *masterController = (MasterViewController *)navigationController.topViewController;
-  masterController.managedObjectContext = self.managedObjectContext;
-  
+//  UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+//  MasterViewController *masterController = (MasterViewController *)navigationController.topViewController;
+//  masterController.managedObjectContext = self.managedObjectContext;
+
   [self seedDatabase];
   return YES;
 }
@@ -107,7 +107,7 @@ BOOL _databaseExists = NO;
     if(_databaseExists == YES){
         return;
     }
-    NSManagedObjectContext *context = __managedObjectContext;
+    NSManagedObjectContext *context = self.managedObjectContext;
 
     // Seed Kanji entity
     NSFetchRequest *kanjiFetchRequest = [[NSFetchRequest alloc] init];

@@ -38,6 +38,9 @@
 		3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F86156F20C30077857F /* KatakanaViewController.m */; };
 		ADBA628A18241C0E00E74E46 /* radicals.json in Resources */ = {isa = PBXBuildFile; fileRef = ADBA628918241C0E00E74E46 /* radicals.json */; };
 		ADBA6290182463F700E74E46 /* Radical.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA628F182463F700E74E46 /* Radical.m */; };
+		ADBA62941825853300E74E46 /* KanjiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */; };
+		ADBA62991828408400E74E46 /* KanjiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA62981828408400E74E46 /* KanjiCell.m */; };
+		ADBA629C1828409400E74E46 /* RadicalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA629B1828409400E74E46 /* RadicalCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,17 +86,23 @@
 		3A9A6F6B156B36160077857F /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
 		3A9A6F6C156B36160077857F /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 		3A9A6F71156D22230077857F /* 2000px-書.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-書.png"; sourceTree = "<group>"; };
-		3A9A6F73156D22410077857F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		3A9A6F75156D22670077857F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		3A9A6F77156D24E00077857F /* icon.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.xcf; sourceTree = "<group>"; };
-		3A9A6F79156D25040077857F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		3A9A6F7B156D254A0077857F /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina.png"; sourceTree = "<group>"; };
-		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina2.png"; sourceTree = "<group>"; };
+		3A9A6F73156D22410077857F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		3A9A6F75156D22670077857F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		3A9A6F77156D24E00077857F /* icon.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; name = icon.xcf; path = ../icon.xcf; sourceTree = "<group>"; };
+		3A9A6F79156D25040077857F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		3A9A6F7B156D254A0077857F /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina.png"; path = "../icon-retina.png"; sourceTree = "<group>"; };
+		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina2.png"; path = "../icon-retina2.png"; sourceTree = "<group>"; };
 		3A9A6F85156F20C20077857F /* KatakanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KatakanaViewController.h; sourceTree = "<group>"; };
 		3A9A6F86156F20C30077857F /* KatakanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KatakanaViewController.m; sourceTree = "<group>"; };
 		ADBA628918241C0E00E74E46 /* radicals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = radicals.json; sourceTree = "<group>"; };
 		ADBA628E182463F700E74E46 /* Radical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Radical.h; path = kanji/models/Radical.h; sourceTree = "<group>"; };
 		ADBA628F182463F700E74E46 /* Radical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Radical.m; path = kanji/models/Radical.m; sourceTree = "<group>"; };
+		ADBA62921825853300E74E46 /* KanjiCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanjiCollectionViewController.h; path = Controllers/KanjiCollectionViewController.h; sourceTree = "<group>"; };
+		ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiCollectionViewController.m; path = Controllers/KanjiCollectionViewController.m; sourceTree = "<group>"; };
+		ADBA62971828408400E74E46 /* KanjiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KanjiCell.h; path = views/KanjiCell.h; sourceTree = "<group>"; };
+		ADBA62981828408400E74E46 /* KanjiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KanjiCell.m; path = views/KanjiCell.m; sourceTree = "<group>"; };
+		ADBA629A1828409400E74E46 /* RadicalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadicalCell.h; path = views/RadicalCell.h; sourceTree = "<group>"; };
+		ADBA629B1828409400E74E46 /* RadicalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RadicalCell.m; path = views/RadicalCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +134,6 @@
 		3A997E811563E1E5003B81C4 = {
 			isa = PBXGroup;
 			children = (
-				3A9A6F7F156D6A120077857F /* icon-retina2.png */,
-				3A9A6F7B156D254A0077857F /* icon-retina.png */,
-				3A9A6F79156D25040077857F /* icon.png */,
-				3A9A6F77156D24E00077857F /* icon.xcf */,
-				3A9A6F75156D22670077857F /* Default@2x.png */,
-				3A9A6F73156D22410077857F /* Default.png */,
-				3A997EFB15668C2A003B81C4 /* Models */,
 				3A997E981563E1E5003B81C4 /* kanji */,
 				3A997EEB1565F532003B81C4 /* ParseCSV */,
 				3A997EBD1563E1E6003B81C4 /* kanjiTests */,
@@ -164,18 +166,14 @@
 		3A997E981563E1E5003B81C4 /* kanji */ = {
 			isa = PBXGroup;
 			children = (
+				ADBA62961828404700E74E46 /* Views */,
 				3A997EA11563E1E5003B81C4 /* AppDelegate.h */,
 				3A997EA21563E1E5003B81C4 /* AppDelegate.m */,
-				3A997EA41563E1E6003B81C4 /* MainStoryboard.storyboard */,
-				3A997EAA1563E1E6003B81C4 /* KanjiViewController.h */,
-				3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */,
-				3A9A6F6B156B36160077857F /* MasterViewController.h */,
-				3A9A6F6C156B36160077857F /* MasterViewController.m */,
-				3A997EAD1563E1E6003B81C4 /* DetailViewController.h */,
-				3A997EAE1563E1E6003B81C4 /* DetailViewController.m */,
-				3A9A6F85156F20C20077857F /* KatakanaViewController.h */,
-				3A9A6F86156F20C30077857F /* KatakanaViewController.m */,
+				ADBA629118257DC200E74E46 /* Controllers */,
 				3A997EA71563E1E6003B81C4 /* kanji.xcdatamodeld */,
+				3A997EA41563E1E6003B81C4 /* MainStoryboard.storyboard */,
+				3A997EFB15668C2A003B81C4 /* Models */,
+				ADBA62951828400800E74E46 /* Resources */,
 				3A997E991563E1E5003B81C4 /* Supporting Files */,
 			);
 			path = kanji;
@@ -187,10 +185,8 @@
 				3A9A6F71156D22230077857F /* 2000px-書.png */,
 				3A997E9A1563E1E5003B81C4 /* kanji-Info.plist */,
 				3A997E9B1563E1E5003B81C4 /* InfoPlist.strings */,
-				3A997EFC1567EDCA003B81C4 /* kanji-seed.json */,
 				3A997E9E1563E1E5003B81C4 /* main.m */,
 				3A997EA01563E1E5003B81C4 /* kanji-Prefix.pch */,
-				ADBA628918241C0E00E74E46 /* radicals.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,6 +229,50 @@
 				ADBA628F182463F700E74E46 /* Radical.m */,
 			);
 			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		ADBA629118257DC200E74E46 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A997EAA1563E1E6003B81C4 /* KanjiViewController.h */,
+				3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */,
+				3A9A6F6B156B36160077857F /* MasterViewController.h */,
+				3A9A6F6C156B36160077857F /* MasterViewController.m */,
+				3A997EAD1563E1E6003B81C4 /* DetailViewController.h */,
+				3A997EAE1563E1E6003B81C4 /* DetailViewController.m */,
+				3A9A6F85156F20C20077857F /* KatakanaViewController.h */,
+				3A9A6F86156F20C30077857F /* KatakanaViewController.m */,
+				ADBA62921825853300E74E46 /* KanjiCollectionViewController.h */,
+				ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ADBA62951828400800E74E46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A9A6F7F156D6A120077857F /* icon-retina2.png */,
+				3A9A6F7B156D254A0077857F /* icon-retina.png */,
+				3A9A6F79156D25040077857F /* icon.png */,
+				3A9A6F77156D24E00077857F /* icon.xcf */,
+				3A9A6F75156D22670077857F /* Default@2x.png */,
+				3A9A6F73156D22410077857F /* Default.png */,
+				3A997EFC1567EDCA003B81C4 /* kanji-seed.json */,
+				ADBA628918241C0E00E74E46 /* radicals.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ADBA62961828404700E74E46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADBA62971828408400E74E46 /* KanjiCell.h */,
+				ADBA62981828408400E74E46 /* KanjiCell.m */,
+				ADBA629A1828409400E74E46 /* RadicalCell.h */,
+				ADBA629B1828409400E74E46 /* RadicalCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +400,10 @@
 				3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */,
 				3A997EFA15668C23003B81C4 /* Kanji.m in Sources */,
 				3A9A6F6D156B36160077857F /* MasterViewController.m in Sources */,
+				ADBA629C1828409400E74E46 /* RadicalCell.m in Sources */,
 				3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */,
+				ADBA62941825853300E74E46 /* KanjiCollectionViewController.m in Sources */,
+				ADBA62991828408400E74E46 /* KanjiCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +506,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -478,7 +521,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
