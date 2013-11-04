@@ -125,7 +125,7 @@ BOOL _databaseExists = NO;
     // Seed Radical entity
     NSFetchRequest *radicalFetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *radicalEntity = [NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *radicalEntity = [NSEntityDescription entityForName:@"Radical" inManagedObjectContext:self.managedObjectContext];
     [radicalFetchRequest setEntity:radicalEntity];
     NSArray *radicals = [Resolve parseJSONFile:@"radicals"];
     for (jsonLine in radicals) {

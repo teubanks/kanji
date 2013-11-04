@@ -1,9 +1,9 @@
 [
-{"stroke_count":1,"kanji": "一", "position":0, "english":"one, horizontal stroke", "hiragana":"いち"}
-{"stroke_count":1,"kanji": "丨", "position":0, "english":"vertical stroke", "hiragana", "たてぼう"},
+{"stroke_count":1,"kanji": "一", "position":0, "english":"one, horizontal stroke", "hiragana":"いち"},
+{"stroke_count":1,"kanji": "丨", "position":0, "english":"vertical stroke", "hiragana": "たてぼう"},
 {"stroke_count":1,"kanji": "丶", "position":0, "english":"dot", "hiragana":"てん"},
 {"stroke_count":1,"kanji": "丿", "position":0, "english":"diagonal sweeping stroke", "hiragana":"の／のかんむり"},
-{"stroke_count":1,"kanji": "乙 乚", "position":0, "english":"the second", "hiragana", "おつ"},
+{"stroke_count":1,"kanji": "乙 乚", "position":0, "english":"the second", "hiragana": "おつ"},
 {"stroke_count":1,"kanji": "亅", "position":0, "english":"Vertical stroke with a hook", "hiragana":"はねぼう"},
 {"stroke_count":2,"kanji": "二", "position":0, "english":"two", "hiragana":"に"},
 {"stroke_count":2,"kanji": "亠", "position":3, "english":"lid, top", "hiragana":"なべぶた／けいさんかんむり"},
@@ -229,8 +229,9 @@
 {"stroke_count":13, "kanji":"鼠", "position":0, "english":"rat, mouse", "hiragana":"ねずみ"},
 {"stroke_count":14, "kanji":"鼻", "position":0, "english":"nose", "hiragana":"はな"},
 {"stroke_count":14, "kanji":"齊 斉", "position":0, "english":"alike", "hiragana":"せい"},
-{"stroke_count":15, "歯", "position":0, "english":"tooth", "hiragana":"は"},
-{"stroke_count":16, "龍", "position":0, "english":"dragon", "hiragana":"りゅう"},
-{"stroke_count":16, "亀", "position":0, "english":"turtle", "hiragana":"かめ"},
-{"stroke_count":17, "龠", "position":0, "english":"flute", "hiragana":"やく"}
+{"stroke_count":15, "kanji":"歯", "position":0, "english":"tooth", "hiragana":"は"},
+{"stroke_count":16, "kanji":"龍", "position":0, "english":"dragon", "hiragana":"りゅう"},
+{"stroke_count":16, "kanji":"亀", "position":0, "english":"turtle", "hiragana":"かめ"},
+{"stroke_count":17, "kanji":"龠", "position":0, "english":"flute", "hiragana":"やく"}
 ]
+
