@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface KanjiCollectionViewController : UICollectionViewController
-
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+-(void)setManagedObjectContext:(NSManagedObjectContext*)managedObjectContext;
 @end

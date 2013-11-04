@@ -37,15 +37,8 @@
     // Dispose of any resources that can be recreated.
 }
 
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 2;
-}
-
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    if(section == 1){
-        return 20;
-    } else {
-        return 10;
-    }
+-(void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
+    DataSource *dataSource = (DataSource*)self.collectionView.dataSource;
+    [dataSource setManagedObjectContext:managedObjectContext];
 }
 @end

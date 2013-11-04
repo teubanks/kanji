@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface DataSource : NSObject <UICollectionViewDataSource>
-
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end

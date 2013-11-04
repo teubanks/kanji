@@ -40,4 +40,7 @@
     return result;
 }
 
++(NSNumber *)numberOfRadicalsInContext:(NSManagedObjectContext *)managedObjectContext {
+    
+}
 @end

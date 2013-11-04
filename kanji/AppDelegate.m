@@ -11,6 +11,7 @@
 #import "MasterViewController.h"
 #import "Resolve.h"
 #import "Kanji.h"
+#import "KanjiCollectionViewController.h"
 
 @implementation AppDelegate
 
@@ -22,13 +23,13 @@ BOOL _databaseExists = NO;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // Override point for customization after application launch.
-//  UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-//  MasterViewController *masterController = (MasterViewController *)navigationController.topViewController;
-//  masterController.managedObjectContext = self.managedObjectContext;
-
-  [self seedDatabase];
-  return YES;
+    // Override point for customization after application launch.
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    KanjiCollectionViewController *kanjiCollectionVC = (KanjiCollectionViewController *)navigationController.topViewController;
+    [kanjiCollectionVC setManagedObjectContext:self.managedObjectContext];
+    
+    [self seedDatabase];
+    return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

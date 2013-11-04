@@ -39,4 +39,8 @@
     return result;
 }
 
++(NSNumber *)numberOfKanjisInContext:(NSManagedObjectContext *)managedObjectContext {
+    
+}
+
 @end
