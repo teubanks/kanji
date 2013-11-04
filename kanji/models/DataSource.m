@@ -21,7 +21,7 @@ NSString *radicalCellID = @"RadicalCell";
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    if(section == 1){
+    if(section == 0){
         return [Kanji numberOfKanjisInContext:self.managedObjectContext];
     } else {
         return [Radical numberOfRadicalsInContext:self.managedObjectContext];
@@ -29,7 +29,7 @@ NSString *radicalCellID = @"RadicalCell";
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if(indexPath.section == 1){
+    if(indexPath.section == 0){
         KanjiCell *cell = (KanjiCell*)[collectionView dequeueReusableCellWithReuseIdentifier:kanjiCellID forIndexPath:indexPath];
         return cell;
     } else {
