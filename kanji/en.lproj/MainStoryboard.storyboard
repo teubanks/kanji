@@ -195,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="255" y="-134"/>
         </scene>
-        <!--View Controller - Radical Character Details-->
+        <!--Radical View Controller - Radical Character Details-->
         <scene sceneID="Ilz-yY-cC0">
             <objects>
-                <viewController id="c94-Ts-Vho" sceneMemberID="viewController">
+                <viewController id="c94-Ts-Vho" customClass="RadicalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rBA-1H-oDk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

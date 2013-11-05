@@ -41,6 +41,7 @@ NSString *radicalHeaderID = @"RadicalHeader";
         KanjiCell *cell = (KanjiCell*)[collectionView dequeueReusableCellWithReuseIdentifier:kanjiCellID forIndexPath:indexPath];
         Kanji *currentKanji = self.prefetchedKanji[indexPath.row];
         [cell.kanjiCellLabel setText:currentKanji.kanji];
+        cell.kanjiEntity = currentKanji;
         return cell;
     }
 }

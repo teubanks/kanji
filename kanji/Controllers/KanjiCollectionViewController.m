@@ -8,6 +8,11 @@
 
 #import "KanjiCollectionViewController.h"
 #import "DataSource.h"
+#import "KanjiViewController.h"
+#import "Kanji.h"
+#import "KanjiCell.h"
+#import "RadicalViewController.h"
+#import "Radical.h"
 
 @interface KanjiCollectionViewController ()
 
@@ -18,5 +23,16 @@
 -(void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
     DataSource *dataSource = (DataSource*)self.collectionView.dataSource;
     [dataSource setManagedObjectContext:managedObjectContext];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    if([[segue identifier] isEqualToString:@"KanjiSegue"]){
+        Kanji *kanjiEntity = [((KanjiCell*)sender) kanjiEntity];
+        KanjiViewController *destinationController = [segue destinationViewController];
+        [destinationController setDetailItem:kanjiEntity];
+    } else if([[segue identifier] isEqualToString:@"RadicalSegue"]){
+        NSLog(@"radicals");
+    }
 }
 @end

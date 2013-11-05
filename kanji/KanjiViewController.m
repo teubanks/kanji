@@ -14,12 +14,6 @@
 
 @implementation KanjiViewController
 
-@synthesize detailItem = _detailItem;
-@synthesize kanjiLabel = _kanjiLabel;
-@synthesize onyomiLabel = _onyomiLabel;
-@synthesize kunyomiLabel = _kunyomiLabel;
-@synthesize englishLabel = _englishLabel;
-
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(id)newDetailItem

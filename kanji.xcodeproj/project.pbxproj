@@ -38,6 +38,7 @@
 		ADB53AE51828B3AC00D2A243 /* icon-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE41828B3AC00D2A243 /* icon-4in.png */; };
 		ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE61828B4CA00D2A243 /* launch-4in.png */; };
 		ADB53AE91828B52B00D2A243 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE81828B52B00D2A243 /* Default~iphone.png */; };
+		ADB53AEC1829723600D2A243 /* RadicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53AEB1829723600D2A243 /* RadicalViewController.m */; };
 		ADBA628A18241C0E00E74E46 /* radicals.json in Resources */ = {isa = PBXBuildFile; fileRef = ADBA628918241C0E00E74E46 /* radicals.json */; };
 		ADBA6290182463F700E74E46 /* Radical.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA628F182463F700E74E46 /* Radical.m */; };
 		ADBA62941825853300E74E46 /* KanjiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */; };
@@ -98,6 +99,8 @@
 		ADB53AE41828B3AC00D2A243 /* icon-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-4in.png"; sourceTree = SOURCE_ROOT; };
 		ADB53AE61828B4CA00D2A243 /* launch-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-4in.png"; sourceTree = SOURCE_ROOT; };
 		ADB53AE81828B52B00D2A243 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = SOURCE_ROOT; };
+		ADB53AEA1829723600D2A243 /* RadicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadicalViewController.h; path = Controllers/RadicalViewController.h; sourceTree = "<group>"; };
+		ADB53AEB1829723600D2A243 /* RadicalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RadicalViewController.m; path = Controllers/RadicalViewController.m; sourceTree = "<group>"; };
 		ADBA628918241C0E00E74E46 /* radicals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = radicals.json; sourceTree = "<group>"; };
 		ADBA628E182463F700E74E46 /* Radical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Radical.h; path = kanji/models/Radical.h; sourceTree = "<group>"; };
 		ADBA628F182463F700E74E46 /* Radical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Radical.m; path = kanji/models/Radical.m; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 				3A997EAE1563E1E6003B81C4 /* KanjiViewController.m */,
 				ADBA62921825853300E74E46 /* KanjiCollectionViewController.h */,
 				ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */,
+				ADB53AEA1829723600D2A243 /* RadicalViewController.h */,
+				ADB53AEB1829723600D2A243 /* RadicalViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A997E9F1563E1E5003B81C4 /* main.m in Sources */,
+				ADB53AEC1829723600D2A243 /* RadicalViewController.m in Sources */,
 				ADB53ADF18285EEE00D2A243 /* HeaderView.m in Sources */,
 				3A997EA31563E1E5003B81C4 /* AppDelegate.m in Sources */,
 				ADBA6290182463F700E74E46 /* Radical.m in Sources */,
