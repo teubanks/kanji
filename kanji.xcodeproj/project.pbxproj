@@ -38,6 +38,9 @@
 		3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F86156F20C30077857F /* KatakanaViewController.m */; };
 		ADB53ADF18285EEE00D2A243 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53ADE18285EEE00D2A243 /* HeaderView.m */; };
 		ADB53AE31828915700D2A243 /* StickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53AE21828915700D2A243 /* StickyHeaderFlowLayout.m */; };
+		ADB53AE51828B3AC00D2A243 /* icon-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE41828B3AC00D2A243 /* icon-4in.png */; };
+		ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE61828B4CA00D2A243 /* launch-4in.png */; };
+		ADB53AE91828B52B00D2A243 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE81828B52B00D2A243 /* Default~iphone.png */; };
 		ADBA628A18241C0E00E74E46 /* radicals.json in Resources */ = {isa = PBXBuildFile; fileRef = ADBA628918241C0E00E74E46 /* radicals.json */; };
 		ADBA6290182463F700E74E46 /* Radical.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA628F182463F700E74E46 /* Radical.m */; };
 		ADBA62941825853300E74E46 /* KanjiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */; };
@@ -101,6 +104,9 @@
 		ADB53ADE18285EEE00D2A243 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = views/HeaderView.m; sourceTree = "<group>"; };
 		ADB53AE11828915700D2A243 /* StickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickyHeaderFlowLayout.h; path = kanji/models/StickyHeaderFlowLayout.h; sourceTree = "<group>"; };
 		ADB53AE21828915700D2A243 /* StickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StickyHeaderFlowLayout.m; path = kanji/models/StickyHeaderFlowLayout.m; sourceTree = "<group>"; };
+		ADB53AE41828B3AC00D2A243 /* icon-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-4in.png"; sourceTree = SOURCE_ROOT; };
+		ADB53AE61828B4CA00D2A243 /* launch-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-4in.png"; sourceTree = SOURCE_ROOT; };
+		ADB53AE81828B52B00D2A243 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = SOURCE_ROOT; };
 		ADBA628918241C0E00E74E46 /* radicals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = radicals.json; sourceTree = "<group>"; };
 		ADBA628E182463F700E74E46 /* Radical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Radical.h; path = kanji/models/Radical.h; sourceTree = "<group>"; };
 		ADBA628F182463F700E74E46 /* Radical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Radical.m; path = kanji/models/Radical.m; sourceTree = "<group>"; };
@@ -265,6 +271,9 @@
 		ADBA62951828400800E74E46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ADB53AE81828B52B00D2A243 /* Default~iphone.png */,
+				ADB53AE61828B4CA00D2A243 /* launch-4in.png */,
+				ADB53AE41828B3AC00D2A243 /* icon-4in.png */,
 				3A9A6F7F156D6A120077857F /* icon-retina2.png */,
 				3A9A6F7B156D254A0077857F /* icon-retina.png */,
 				3A9A6F79156D25040077857F /* icon.png */,
@@ -369,6 +378,9 @@
 				3A9A6F76156D22670077857F /* Default@2x.png in Resources */,
 				3A9A6F78156D24E10077857F /* icon.xcf in Resources */,
 				3A9A6F7A156D25040077857F /* icon.png in Resources */,
+				ADB53AE91828B52B00D2A243 /* Default~iphone.png in Resources */,
+				ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */,
+				ADB53AE51828B3AC00D2A243 /* icon-4in.png in Resources */,
 				3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */,
 				3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */,
 				ADBA628A18241C0E00E74E46 /* radicals.json in Resources */,
@@ -492,7 +504,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -510,7 +522,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

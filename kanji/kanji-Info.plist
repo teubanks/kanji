@@ -14,6 +14,7 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
+				<string>icon-4in</string>
 				<string>Default.png</string>
 				<string>Default@2x.png</string>
 				<string>icon.png</string>
@@ -37,6 +38,21 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UILaunchImageFile</key>
+	<string>Default</string>
+	<key>UILaunchImages</key>
+	<array>
+		<dict>
+			<key>UILaunchImageMinimumOSVersion</key>
+			<string>7.0</string>
+			<key>UILaunchImageName</key>
+			<string>launch-4in</string>
+			<key>UILaunchImageOrientation</key>
+			<string>Portrait</string>
+			<key>UILaunchImageSize</key>
+			<string>{320, 568}</string>
+		</dict>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
