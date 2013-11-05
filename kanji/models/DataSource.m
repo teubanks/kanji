@@ -34,11 +34,13 @@ NSString *radicalHeaderID = @"RadicalHeader";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.section == 0){
         RadicalCell *cell = (RadicalCell*)[collectionView dequeueReusableCellWithReuseIdentifier:radicalCellID forIndexPath:indexPath];
-        [cell.radicalCellLabel setText:@"rad"];
+        Radical *currentRadical = self.prefetchedRadicals[indexPath.row];
+        [cell.radicalCellLabel setText:currentRadical.character];
         return cell;
     } else {
         KanjiCell *cell = (KanjiCell*)[collectionView dequeueReusableCellWithReuseIdentifier:kanjiCellID forIndexPath:indexPath];
-        [cell.kanjiCellLabel setText:@"kanji"];
+        Kanji *currentKanji = self.prefetchedKanji[indexPath.row];
+        [cell.kanjiCellLabel setText:currentKanji.kanji];
         return cell;
     }
 }
@@ -54,5 +56,11 @@ NSString *radicalHeaderID = @"RadicalHeader";
         }
     }
     return sectionHeader;
+}
+
+-(void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
+    [self setPrefetchedKanji:[Kanji kanjisInContext:managedObjectContext]];
+    [self setPrefetchedRadicals:[Radical radicalsInContext:managedObjectContext]];
+    _managedObjectContext = managedObjectContext;
 }
 @end

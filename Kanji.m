@@ -51,4 +51,11 @@
     return count;
 }
 
++(NSArray *)kanjisInContext:(NSManagedObjectContext*)managedObjectContext{
+    NSFetchRequest *allKanjiRequest = [[NSFetchRequest alloc] init];
+    [allKanjiRequest setEntity:[NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:managedObjectContext]];
+    NSError *fetchError = nil;
+    NSArray *allKanjis = [managedObjectContext executeFetchRequest:allKanjiRequest error:&fetchError];
+    return allKanjis;
+}
 @end

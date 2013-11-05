@@ -20,4 +20,5 @@
 
 + (Kanji *)insertNewKanjiWithProperties:(NSDictionary *)properties inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 +(NSUInteger)numberOfKanjisInContext:(NSManagedObjectContext*)managedObjectContext;
++(NSArray*)kanjisInContext:(NSManagedObjectContext*)managedObjectContext;
 @end

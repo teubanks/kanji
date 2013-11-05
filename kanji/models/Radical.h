@@ -12,7 +12,7 @@
 
 @interface Radical : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * character;
+@property (nonatomic, retain) NSString * character;
 @property (nonatomic, retain) NSString * english;
 @property (nonatomic, retain) NSString * hiragana;
 @property (nonatomic, retain) NSNumber * position;
@@ -20,4 +20,5 @@
 
 +(Radical *)insertNewRadicalWithProperties:(NSDictionary *)properties inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 +(NSUInteger)numberOfRadicalsInContext:(NSManagedObjectContext*)managedObjectContext;
++(NSArray*)radicalsInContext:(NSManagedObjectContext*)managedObjectContext;
 @end

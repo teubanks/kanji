@@ -51,4 +51,12 @@
 
     return count;
 }
+
++(NSArray *)radicalsInContext:(NSManagedObjectContext*)managedObjectContext{
+    NSFetchRequest *allRadicalRequest = [[NSFetchRequest alloc] init];
+    [allRadicalRequest setEntity:[NSEntityDescription entityForName:@"Radical" inManagedObjectContext:managedObjectContext]];
+    NSError *fetchError = nil;
+    NSArray *allRadicals = [managedObjectContext executeFetchRequest:allRadicalRequest error:&fetchError];
+    return allRadicals;
+}
 @end
