@@ -21,64 +21,6 @@
             </objects>
             <point key="canvasLocation" x="-845" y="76"/>
         </scene>
-        <!--Kanji View Controller - Kanji-->
-        <scene sceneID="18">
-            <objects>
-                <tableViewController title="Kanji" id="12" customClass="KanjiViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="phq-AM-6qj" style="IBUITableViewCellStyleDefault" id="lJ0-d7-vTF">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJ0-d7-vTF" id="M8D-Sp-2HT">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phq-AM-6qj">
-                                            <rect key="frame" x="15" y="0.0" width="270" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="21" kind="push" identifier="showDetail" id="jZb-fq-zAk"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="12" id="PAK-PK-VvL"/>
-                            <outlet property="delegate" destination="12" id="TPb-6d-4Rs"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Kanji List" id="36"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="459" y="64"/>
-        </scene>
-        <!--View Controller - Katakana-->
-        <scene sceneID="9dZ-np-4CY">
-            <objects>
-                <viewController id="1lu-RX-pAJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rL3-ki-SNL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Katakana" id="2me-zJ-dvf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fN2-NR-pQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="269" y="669"/>
-        </scene>
         <!--Kanji Collection View Controller - Kanji-->
         <scene sceneID="Pfd-Ul-c59">
             <objects>
@@ -112,6 +54,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="kanjiCellLabel" destination="nq2-T1-o6i" id="KCZ-Qk-EfY"/>
+                                    <segue destination="21" kind="push" id="wsH-wd-cRO"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RadicalCell" id="qi2-S2-bJD" customClass="RadicalCell">
@@ -133,6 +76,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="radicalCellLabel" destination="kj4-8L-VAs" id="B3o-b8-YEk"/>
+                                    <segue destination="c94-Ts-Vho" kind="push" id="LsB-2H-Skl"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -164,21 +108,6 @@
             </objects>
             <point key="canvasLocation" x="-343" y="71"/>
         </scene>
-        <!--Master View Controller - Master-->
-        <scene sceneID="vow-Nd-Lfh">
-            <objects>
-                <tableViewController title="Master" id="Ghp-jd-9yC" customClass="MasterViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kSI-Pn-ZgK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Kanji or Kana" id="eFJ-TU-hNd"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JHl-3U-aA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="115" y="88"/>
-        </scene>
         <!--Detail View Controller - Detail-->
         <scene sceneID="24">
             <objects>
@@ -188,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="ぎ" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="50" id="27">
-                                <rect key="frame" x="20" y="118" width="280" height="182"/>
+                                <rect key="frame" x="20" y="103" width="280" height="148"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="90"/>
@@ -231,7 +160,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="EnglishText" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="H1j-2R-qfu">
-                                <rect key="frame" x="20" y="53" width="280" height="33"/>
+                                <rect key="frame" x="20" y="62" width="280" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -244,7 +173,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="26"/>
+                    <navigationItem key="navigationItem" title="Kanji Details" id="26"/>
                     <connections>
                         <outlet property="englishLabel" destination="H1j-2R-qfu" id="wtL-g1-zFE"/>
                         <outlet property="kanjiLabel" destination="27" id="Vvr-dn-nlG"/>
@@ -254,7 +183,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="64"/>
+            <point key="canvasLocation" x="255" y="-134"/>
+        </scene>
+        <!--View Controller - Radical Character Details-->
+        <scene sceneID="Ilz-yY-cC0">
+            <objects>
+                <viewController id="c94-Ts-Vho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rBA-1H-oDk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Radical Character Details" id="meQ-oG-Ggd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uI7-Vh-HXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="440"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
