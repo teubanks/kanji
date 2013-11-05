@@ -11,6 +11,7 @@
 #import "MasterViewController.h"
 #import "Resolve.h"
 #import "Kanji.h"
+#import "Radical.h"
 #import "KanjiCollectionViewController.h"
 
 @implementation AppDelegate
@@ -129,7 +130,7 @@ BOOL _databaseExists = NO;
     [radicalFetchRequest setEntity:radicalEntity];
     NSArray *radicals = [Resolve parseJSONFile:@"radicals"];
     for (jsonLine in radicals) {
-        [Kanji insertNewKanjiWithProperties:jsonLine inManagedObjectContext:context];
+        [Radical insertNewRadicalWithProperties:jsonLine inManagedObjectContext:context];
     }
 }
 

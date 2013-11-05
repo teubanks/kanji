@@ -10,7 +10,7 @@
         <userInfo/>
     </entity>
     <entity name="Radical" representedClassName="Radical" syncable="YES">
-        <attribute name="character" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="character" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="english" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hiragana" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>

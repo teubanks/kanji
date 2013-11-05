@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface KanjiCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UILabel *kanjiCellLabel;
 
 @end

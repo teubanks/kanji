@@ -34,9 +34,11 @@ NSString *radicalHeaderID = @"RadicalHeader";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.section == 0){
         KanjiCell *cell = (KanjiCell*)[collectionView dequeueReusableCellWithReuseIdentifier:kanjiCellID forIndexPath:indexPath];
+        [cell.kanjiCellLabel setText:@"kanji"];
         return cell;
     } else {
         RadicalCell *cell = (RadicalCell*)[collectionView dequeueReusableCellWithReuseIdentifier:radicalCellID forIndexPath:indexPath];
+        [cell.radicalCellLabel setText:@"rad"];
         return cell;
     }
 }
@@ -44,11 +46,10 @@ NSString *radicalHeaderID = @"RadicalHeader";
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     HeaderView *sectionHeader = nil;
     if(kind == UICollectionElementKindSectionHeader){
+        sectionHeader = (HeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kanjiHeaderID forIndexPath:indexPath];
         if(indexPath.section == 0){
-            sectionHeader = (HeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kanjiHeaderID forIndexPath:indexPath];
             [sectionHeader.headerTitleLabel setText:@"JLPT Level 5"];
         } else {
-            sectionHeader = (HeaderView*)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kanjiHeaderID forIndexPath:indexPath];
             [sectionHeader.headerTitleLabel setText:@"Radicals"];
         }
     }
