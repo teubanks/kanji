@@ -54,6 +54,8 @@
 +(NSArray *)kanjisInContext:(NSManagedObjectContext*)managedObjectContext{
     NSFetchRequest *allKanjiRequest = [[NSFetchRequest alloc] init];
     [allKanjiRequest setEntity:[NSEntityDescription entityForName:@"Kanji" inManagedObjectContext:managedObjectContext]];
+    NSSortDescriptor *kanjiSort = [[NSSortDescriptor alloc] initWithKey:@"kanji" ascending:YES];
+    [allKanjiRequest setSortDescriptors:@[kanjiSort]];
     NSError *fetchError = nil;
     NSArray *allKanjis = [managedObjectContext executeFetchRequest:allKanjiRequest error:&fetchError];
     return allKanjis;
