@@ -46,20 +46,4 @@
   [self configureView];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-  self.kanjiLabel = nil;
-  self.onyomiLabel = nil;
-  self.kunyomiLabel = nil;
-  self.englishLabel = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-  return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-
-
 @end

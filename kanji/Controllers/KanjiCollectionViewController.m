@@ -13,6 +13,7 @@
 #import "KanjiCell.h"
 #import "RadicalViewController.h"
 #import "Radical.h"
+#import "RadicalCell.h"
 
 @interface KanjiCollectionViewController ()
 
@@ -32,7 +33,9 @@
         KanjiViewController *destinationController = [segue destinationViewController];
         [destinationController setDetailItem:kanjiEntity];
     } else if([[segue identifier] isEqualToString:@"RadicalSegue"]){
-        NSLog(@"radicals");
+        Radical *kanjiEntity = [((RadicalCell*)sender) radicalEntity];
+        RadicalViewController *destinationController = [segue destinationViewController];
+        [destinationController setDetailItem:kanjiEntity];
     }
 }
 @end

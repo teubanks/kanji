@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Radical;
 
 @interface RadicalCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *radicalCellLabel;
+@property (strong, nonatomic) Radical *radicalEntity;
 
 @end

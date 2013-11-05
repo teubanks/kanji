@@ -36,6 +36,7 @@ NSString *radicalHeaderID = @"RadicalHeader";
         RadicalCell *cell = (RadicalCell*)[collectionView dequeueReusableCellWithReuseIdentifier:radicalCellID forIndexPath:indexPath];
         Radical *currentRadical = self.prefetchedRadicals[indexPath.row];
         [cell.radicalCellLabel setText:currentRadical.character];
+        cell.radicalEntity = currentRadical;
         return cell;
     } else {
         KanjiCell *cell = (KanjiCell*)[collectionView dequeueReusableCellWithReuseIdentifier:kanjiCellID forIndexPath:indexPath];
