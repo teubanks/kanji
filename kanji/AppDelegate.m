@@ -26,9 +26,10 @@ BOOL _databaseExists = NO;
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     KanjiCollectionViewController *kanjiCollectionVC = (KanjiCollectionViewController *)navigationController.topViewController;
-    [kanjiCollectionVC setManagedObjectContext:self.managedObjectContext];
-    
+
     [self seedDatabase];
+
+    [kanjiCollectionVC setManagedObjectContext:self.managedObjectContext];
     return YES;
 }
 							
@@ -105,10 +106,10 @@ BOOL _databaseExists = NO;
 }
 
 - (void)seedDatabase {
+    NSManagedObjectContext *context = self.managedObjectContext;
     if(_databaseExists == YES){
         return;
     }
-    NSManagedObjectContext *context = self.managedObjectContext;
 
     // Seed Kanji entity
     NSFetchRequest *kanjiFetchRequest = [[NSFetchRequest alloc] init];

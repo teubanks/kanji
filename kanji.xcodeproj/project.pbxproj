@@ -335,6 +335,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					3A997E8B1563E1E5003B81C4 = {
+						DevelopmentTeam = J242ZBXRDH;
+					};
+				};
 			};
 			buildConfigurationList = 3A997E861563E1E5003B81C4 /* Build configuration list for PBXProject "kanji" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -521,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
@@ -536,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
