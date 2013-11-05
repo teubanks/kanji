@@ -55,6 +55,8 @@
 +(NSArray *)radicalsInContext:(NSManagedObjectContext*)managedObjectContext{
     NSFetchRequest *allRadicalRequest = [[NSFetchRequest alloc] init];
     [allRadicalRequest setEntity:[NSEntityDescription entityForName:@"Radical" inManagedObjectContext:managedObjectContext]];
+    NSSortDescriptor *strokeNumberSort = [[NSSortDescriptor alloc] initWithKey:@"strokeCount" ascending:YES];
+    [allRadicalRequest setSortDescriptors:@[strokeNumberSort]];
     NSError *fetchError = nil;
     NSArray *allRadicals = [managedObjectContext executeFetchRequest:allRadicalRequest error:&fetchError];
     return allRadicals;
