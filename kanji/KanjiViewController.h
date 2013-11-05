@@ -1,5 +1,5 @@
 //
-//  KanjiViewController.h
+//  DetailViewController.h
 //  kanji
 //
 //  Created by MoneyDesktop on 5/16/12.
@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-#import <CoreData/CoreData.h>
+@interface KanjiViewController : UIViewController
 
-@interface KanjiViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@property (strong, nonatomic) id detailItem;
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) IBOutlet UILabel *kanjiLabel;
+@property (strong, nonatomic) IBOutlet UILabel *onyomiLabel;
+@property (strong, nonatomic) IBOutlet UILabel *kunyomiLabel;
+@property (strong, nonatomic) IBOutlet UILabel *englishLabel;
 
 @end

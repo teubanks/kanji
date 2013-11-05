@@ -16,8 +16,7 @@
 		3A997EA31563E1E5003B81C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EA21563E1E5003B81C4 /* AppDelegate.m */; };
 		3A997EA61563E1E6003B81C4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EA41563E1E6003B81C4 /* MainStoryboard.storyboard */; };
 		3A997EA91563E1E6003B81C4 /* kanji.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EA71563E1E6003B81C4 /* kanji.xcdatamodeld */; };
-		3A997EAC1563E1E6003B81C4 /* KanjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */; };
-		3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EAE1563E1E6003B81C4 /* DetailViewController.m */; };
+		3A997EAF1563E1E6003B81C4 /* KanjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EAE1563E1E6003B81C4 /* KanjiViewController.m */; };
 		3A997EB71563E1E6003B81C4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A997EB61563E1E6003B81C4 /* SenTestingKit.framework */; };
 		3A997EB81563E1E6003B81C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A997E901563E1E5003B81C4 /* UIKit.framework */; };
 		3A997EB91563E1E6003B81C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A997E921563E1E5003B81C4 /* Foundation.framework */; };
@@ -27,7 +26,6 @@
 		3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EF51565F5C5003B81C4 /* Resolve.m */; };
 		3A997EFA15668C23003B81C4 /* Kanji.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A997EF915668C22003B81C4 /* Kanji.m */; };
 		3A997EFD1567EDCA003B81C4 /* kanji-seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A997EFC1567EDCA003B81C4 /* kanji-seed.json */; };
-		3A9A6F6D156B36160077857F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F6C156B36160077857F /* MasterViewController.m */; };
 		3A9A6F72156D22230077857F /* 2000px-書.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F71156D22230077857F /* 2000px-書.png */; };
 		3A9A6F74156D22410077857F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F73156D22410077857F /* Default.png */; };
 		3A9A6F76156D22670077857F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F75156D22670077857F /* Default@2x.png */; };
@@ -35,7 +33,6 @@
 		3A9A6F7A156D25040077857F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F79156D25040077857F /* icon.png */; };
 		3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7B156D254A0077857F /* icon-retina.png */; };
 		3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7F156D6A120077857F /* icon-retina2.png */; };
-		3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A6F86156F20C30077857F /* KatakanaViewController.m */; };
 		ADB53ADF18285EEE00D2A243 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53ADE18285EEE00D2A243 /* HeaderView.m */; };
 		ADB53AE31828915700D2A243 /* StickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53AE21828915700D2A243 /* StickyHeaderFlowLayout.m */; };
 		ADB53AE51828B3AC00D2A243 /* icon-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE41828B3AC00D2A243 /* icon-4in.png */; };
@@ -73,10 +70,8 @@
 		3A997EA21563E1E5003B81C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3A997EA51563E1E6003B81C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3A997EA81563E1E6003B81C4 /* kanji.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = kanji.xcdatamodel; sourceTree = "<group>"; };
-		3A997EAA1563E1E6003B81C4 /* KanjiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanjiViewController.h; sourceTree = "<group>"; };
-		3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanjiViewController.m; sourceTree = "<group>"; };
-		3A997EAD1563E1E6003B81C4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		3A997EAE1563E1E6003B81C4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3A997EAD1563E1E6003B81C4 /* KanjiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KanjiViewController.h; sourceTree = "<group>"; };
+		3A997EAE1563E1E6003B81C4 /* KanjiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanjiViewController.m; sourceTree = "<group>"; };
 		3A997EB51563E1E6003B81C4 /* kanjiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kanjiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A997EB61563E1E6003B81C4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		3A997EBF1563E1E6003B81C4 /* kanjiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "kanjiTests-Info.plist"; sourceTree = "<group>"; };
@@ -89,8 +84,6 @@
 		3A997EF815668C22003B81C4 /* Kanji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kanji.h; sourceTree = "<group>"; };
 		3A997EF915668C22003B81C4 /* Kanji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kanji.m; sourceTree = "<group>"; };
 		3A997EFC1567EDCA003B81C4 /* kanji-seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kanji-seed.json"; sourceTree = "<group>"; };
-		3A9A6F6B156B36160077857F /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../MasterViewController.h; sourceTree = "<group>"; };
-		3A9A6F6C156B36160077857F /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../MasterViewController.m; sourceTree = "<group>"; };
 		3A9A6F71156D22230077857F /* 2000px-書.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-書.png"; sourceTree = "<group>"; };
 		3A9A6F73156D22410077857F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		3A9A6F75156D22670077857F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
@@ -98,8 +91,6 @@
 		3A9A6F79156D25040077857F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		3A9A6F7B156D254A0077857F /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina.png"; path = "../icon-retina.png"; sourceTree = "<group>"; };
 		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina2.png"; path = "../icon-retina2.png"; sourceTree = "<group>"; };
-		3A9A6F85156F20C20077857F /* KatakanaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KatakanaViewController.h; sourceTree = "<group>"; };
-		3A9A6F86156F20C30077857F /* KatakanaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KatakanaViewController.m; sourceTree = "<group>"; };
 		ADB53ADD18285EEE00D2A243 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = views/HeaderView.h; sourceTree = "<group>"; };
 		ADB53ADE18285EEE00D2A243 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = views/HeaderView.m; sourceTree = "<group>"; };
 		ADB53AE11828915700D2A243 /* StickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickyHeaderFlowLayout.h; path = kanji/models/StickyHeaderFlowLayout.h; sourceTree = "<group>"; };
@@ -254,14 +245,8 @@
 		ADBA629118257DC200E74E46 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3A997EAA1563E1E6003B81C4 /* KanjiViewController.h */,
-				3A997EAB1563E1E6003B81C4 /* KanjiViewController.m */,
-				3A9A6F6B156B36160077857F /* MasterViewController.h */,
-				3A9A6F6C156B36160077857F /* MasterViewController.m */,
-				3A997EAD1563E1E6003B81C4 /* DetailViewController.h */,
-				3A997EAE1563E1E6003B81C4 /* DetailViewController.m */,
-				3A9A6F85156F20C20077857F /* KatakanaViewController.h */,
-				3A9A6F86156F20C30077857F /* KatakanaViewController.m */,
+				3A997EAD1563E1E6003B81C4 /* KanjiViewController.h */,
+				3A997EAE1563E1E6003B81C4 /* KanjiViewController.m */,
 				ADBA62921825853300E74E46 /* KanjiCollectionViewController.h */,
 				ADBA62931825853300E74E46 /* KanjiCollectionViewController.m */,
 			);
@@ -424,14 +409,11 @@
 				ADBA6290182463F700E74E46 /* Radical.m in Sources */,
 				3A997EA91563E1E6003B81C4 /* kanji.xcdatamodeld in Sources */,
 				ADBA629F1828418000E74E46 /* DataSource.m in Sources */,
-				3A997EAC1563E1E6003B81C4 /* KanjiViewController.m in Sources */,
-				3A997EAF1563E1E6003B81C4 /* DetailViewController.m in Sources */,
+				3A997EAF1563E1E6003B81C4 /* KanjiViewController.m in Sources */,
 				3A997EF61565F5C5003B81C4 /* Resolve.m in Sources */,
 				ADB53AE31828915700D2A243 /* StickyHeaderFlowLayout.m in Sources */,
 				3A997EFA15668C23003B81C4 /* Kanji.m in Sources */,
-				3A9A6F6D156B36160077857F /* MasterViewController.m in Sources */,
 				ADBA629C1828409400E74E46 /* RadicalCell.m in Sources */,
-				3A9A6F87156F20C40077857F /* KatakanaViewController.m in Sources */,
 				ADBA62941825853300E74E46 /* KanjiCollectionViewController.m in Sources */,
 				ADBA62991828408400E74E46 /* KanjiCell.m in Sources */,
 			);

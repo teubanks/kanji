@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "KanjiViewController.h"
-#import "MasterViewController.h"
 #import "Resolve.h"
 #import "Kanji.h"
 #import "Radical.h"

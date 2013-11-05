@@ -59,7 +59,7 @@
                                 </view>
                                 <connections>
                                     <outlet property="kanjiCellLabel" destination="nq2-T1-o6i" id="KCZ-Qk-EfY"/>
-                                    <segue destination="21" kind="push" id="wsH-wd-cRO"/>
+                                    <segue destination="21" kind="push" identifier="KanjiSegue" id="wsH-wd-cRO"/>
                                 </connections>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RadicalCell" id="qi2-S2-bJD" customClass="RadicalCell">
@@ -86,7 +86,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="radicalCellLabel" destination="kj4-8L-VAs" id="B3o-b8-YEk"/>
-                                    <segue destination="c94-Ts-Vho" kind="push" id="LsB-2H-Skl"/>
+                                    <segue destination="c94-Ts-Vho" kind="push" identifier="RadicalSegue" id="LsB-2H-Skl"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="-343" y="71"/>
         </scene>
-        <!--Detail View Controller - Detail-->
+        <!--Kanji View Controller - Detail-->
         <scene sceneID="24">
             <objects>
-                <viewController title="Detail" id="21" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Detail" id="21" customClass="KanjiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
