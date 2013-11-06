@@ -35,6 +35,16 @@
         self.onyomiLabel.text = [[self.detailItem valueForKey:@"onyomi"] description];
         self.kunyomiLabel.text = [[self.detailItem valueForKey:@"kunyomi"] description];
         self.kunyomiLabel.numberOfLines = 3;
+        NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:17]};
+
+        NSMutableAttributedString *kunyomiString = [[NSMutableAttributedString alloc] initWithString:[[self.detailItem valueForKey:@"kunyomi"] description] attributes:attributes];
+        CGFloat width = 280;
+        CGRect labelBounds = [kunyomiString boundingRectWithSize:CGSizeMake(width, 10000) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+        [self.kunyomiLabel setBounds:labelBounds];
+        CGRect kunyomiLabelFrame = self.kunyomiLabel.frame;
+        kunyomiLabelFrame.origin.y = kunyomiLabelFrame.origin.y + labelBounds.size.height/3;
+        self.kunyomiLabel.frame = kunyomiLabelFrame;
+
         self.englishLabel.text = [[self.detailItem valueForKey:@"english"] description];
         self.englishLabel.numberOfLines = 2;
     }
@@ -46,5 +56,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
+
+//-(void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    NSLog(@"tatakai");
+//}
 
 @end
