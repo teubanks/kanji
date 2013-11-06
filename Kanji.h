@@ -2,8 +2,7 @@
 //  Kanji.h
 //  kanji
 //
-//  Created by MoneyDesktop on 5/18/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Tracey Eubanks on 5/18/12.
 //
 
 #import <Foundation/Foundation.h>
