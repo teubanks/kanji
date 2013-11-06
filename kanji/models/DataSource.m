@@ -54,7 +54,7 @@ NSString *radicalHeaderID = @"RadicalHeader";
         if(indexPath.section == 0){
             [sectionHeader.headerTitleLabel setText:@"Radicals"];
         } else {
-            [sectionHeader.headerTitleLabel setText:@"JLPT Level 5"];
+            [sectionHeader.headerTitleLabel setText:@"JLPT N5"];
         }
     }
     return sectionHeader;
