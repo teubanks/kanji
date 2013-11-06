@@ -138,25 +138,20 @@ BOOL _databaseExists = NO;
 // If the coordinator doesn't already exist, it is created and the application's store added to it.
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator
 {
-  NSFileManager *fileManager = [[NSFileManager alloc] init];
-  NSString *storePath = [[self applicationDocumentsDirectory] path];
-  storePath = [storePath stringByAppendingString:@"/kanji.sqlite"];
-  BOOL fileExists = [fileManager fileExistsAtPath:storePath];
-  if(fileExists) {
-    _databaseExists = YES;
-  }
-  if (__persistentStoreCoordinator != nil) {
+    NSFileManager *fileManager = [[NSFileManager alloc] init];
+    NSString *storePath = [[self applicationDocumentsDirectory] path];
+    storePath = [storePath stringByAppendingString:@"/kanji.sqlite"];
+    BOOL fileExists = [fileManager fileExistsAtPath:storePath];
+    if(fileExists) {
+        _databaseExists = YES;
+    }
+    if (__persistentStoreCoordinator != nil) {
         return __persistentStoreCoordinator;
     }
-
+    
     NSError *error = nil;
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"kanji.sqlite"];
-    [storeURL setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:&error];
-    if(error){
-        NSLog(@"ran into problems excluding database from iCloud");
-    }
-    error = nil;
-
+    
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         /*
@@ -186,7 +181,12 @@ BOOL _databaseExists = NO;
         abort();
     }    
     
-  return __persistentStoreCoordinator;
+    [storeURL setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:&error];
+    if(error){
+        NSLog(@"ran into problems excluding database from iCloud");
+    }
+    error = nil;
+    return __persistentStoreCoordinator;
 }
 
 #pragma mark - Application's Documents directory
