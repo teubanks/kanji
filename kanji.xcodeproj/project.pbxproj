@@ -38,6 +38,9 @@
 		AD88E7D1182AC907005FD506 /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D0182AC907005FD506 /* settings-icon.png */; };
 		AD88E7D3182AC992005FD506 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D2182AC992005FD506 /* launch.png */; };
 		AD88E7D6182ACEEB005FD506 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88E7D5182ACEEB005FD506 /* Crashlytics.framework */; };
+		AD88E7DD182AD0B2005FD506 /* libFlurry_4.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88E7DC182AD0B2005FD506 /* libFlurry_4.3.0.a */; };
+		AD88E7DF182AD25F005FD506 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88E7DE182AD25F005FD506 /* SystemConfiguration.framework */; };
+		AD88E7E1182AD27A005FD506 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88E7E0182AD27A005FD506 /* Security.framework */; };
 		ADB53ADF18285EEE00D2A243 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53ADE18285EEE00D2A243 /* HeaderView.m */; };
 		ADB53AE31828915700D2A243 /* StickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53AE21828915700D2A243 /* StickyHeaderFlowLayout.m */; };
 		ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE61828B4CA00D2A243 /* launch-4in.png */; };
@@ -101,6 +104,10 @@
 		AD88E7D0182AC907005FD506 /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon.png"; sourceTree = SOURCE_ROOT; };
 		AD88E7D2182AC992005FD506 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
 		AD88E7D5182ACEEB005FD506 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		AD88E7DB182AD0B2005FD506 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		AD88E7DC182AD0B2005FD506 /* libFlurry_4.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.3.0.a; sourceTree = "<group>"; };
+		AD88E7DE182AD25F005FD506 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AD88E7E0182AD27A005FD506 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		ADB53ADD18285EEE00D2A243 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = views/HeaderView.h; sourceTree = "<group>"; };
 		ADB53ADE18285EEE00D2A243 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = views/HeaderView.m; sourceTree = "<group>"; };
 		ADB53AE11828915700D2A243 /* StickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickyHeaderFlowLayout.h; path = kanji/models/StickyHeaderFlowLayout.h; sourceTree = "<group>"; };
@@ -127,11 +134,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD88E7E1182AD27A005FD506 /* Security.framework in Frameworks */,
+				AD88E7DF182AD25F005FD506 /* SystemConfiguration.framework in Frameworks */,
 				3A997E911563E1E5003B81C4 /* UIKit.framework in Frameworks */,
 				AD88E7D6182ACEEB005FD506 /* Crashlytics.framework in Frameworks */,
 				3A997E931563E1E5003B81C4 /* Foundation.framework in Frameworks */,
 				3A997E951563E1E5003B81C4 /* CoreGraphics.framework in Frameworks */,
 				3A997E971563E1E5003B81C4 /* CoreData.framework in Frameworks */,
+				AD88E7DD182AD0B2005FD506 /* libFlurry_4.3.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +182,9 @@
 		3A997E8F1563E1E5003B81C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD88E7E0182AD27A005FD506 /* Security.framework */,
+				AD88E7DE182AD25F005FD506 /* SystemConfiguration.framework */,
+				AD88E7DA182AD0B2005FD506 /* Flurry */,
 				AD88E7D5182ACEEB005FD506 /* Crashlytics.framework */,
 				3A997E901563E1E5003B81C4 /* UIKit.framework */,
 				3A997E921563E1E5003B81C4 /* Foundation.framework */,
@@ -253,6 +266,15 @@
 			);
 			name = Models;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		AD88E7DA182AD0B2005FD506 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				AD88E7DB182AD0B2005FD506 /* Flurry.h */,
+				AD88E7DC182AD0B2005FD506 /* libFlurry_4.3.0.a */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 		ADBA629118257DC200E74E46 /* Controllers */ = {
@@ -566,6 +588,11 @@
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/narshlob/Downloads/Flurry\\ iPhone\\ SDK\\ viPhone\\ 4.3.0/Flurry-iOS-4.3.0/Flurry",
+					/Users/narshlob/Dropbox/iphone/kanji/Flurry,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -586,6 +613,11 @@
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/narshlob/Downloads/Flurry\\ iPhone\\ SDK\\ viPhone\\ 4.3.0/Flurry-iOS-4.3.0/Flurry",
+					/Users/narshlob/Dropbox/iphone/kanji/Flurry,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

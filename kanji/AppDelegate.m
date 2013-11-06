@@ -13,6 +13,7 @@
 #import "Radical.h"
 #import "KanjiCollectionViewController.h"
 #import <Crashlytics/Crashlytics.h>
+#import "Flurry.h"
 
 @implementation AppDelegate
 
@@ -32,6 +33,7 @@ BOOL _databaseExists = NO;
 
     [kanjiCollectionVC setManagedObjectContext:self.managedObjectContext];
     [Crashlytics startWithAPIKey:@"a389ec833f984cc08dab0cbc95c10d780d1db5e8"];
+    [Flurry startSession:@"NYQH9JKNZHK7MCZH3M65"];
     return YES;
 }
 							
