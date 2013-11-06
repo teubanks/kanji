@@ -33,9 +33,12 @@
 		3A9A6F7A156D25040077857F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F79156D25040077857F /* icon.png */; };
 		3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7B156D254A0077857F /* icon-retina.png */; };
 		3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7F156D6A120077857F /* icon-retina2.png */; };
+		AD88E7CD182AC712005FD506 /* icon-retina4in.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7CC182AC712005FD506 /* icon-retina4in.png */; };
+		AD88E7CF182AC8D7005FD506 /* spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7CE182AC8D7005FD506 /* spotlight.png */; };
+		AD88E7D1182AC907005FD506 /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D0182AC907005FD506 /* settings-icon.png */; };
+		AD88E7D3182AC992005FD506 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D2182AC992005FD506 /* launch.png */; };
 		ADB53ADF18285EEE00D2A243 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53ADE18285EEE00D2A243 /* HeaderView.m */; };
 		ADB53AE31828915700D2A243 /* StickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53AE21828915700D2A243 /* StickyHeaderFlowLayout.m */; };
-		ADB53AE51828B3AC00D2A243 /* icon-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE41828B3AC00D2A243 /* icon-4in.png */; };
 		ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE61828B4CA00D2A243 /* launch-4in.png */; };
 		ADB53AE91828B52B00D2A243 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE81828B52B00D2A243 /* Default~iphone.png */; };
 		ADB53AEC1829723600D2A243 /* RadicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53AEB1829723600D2A243 /* RadicalViewController.m */; };
@@ -92,11 +95,14 @@
 		3A9A6F79156D25040077857F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		3A9A6F7B156D254A0077857F /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina.png"; path = "../icon-retina.png"; sourceTree = "<group>"; };
 		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina2.png"; path = "../icon-retina2.png"; sourceTree = "<group>"; };
+		AD88E7CC182AC712005FD506 /* icon-retina4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina4in.png"; sourceTree = SOURCE_ROOT; };
+		AD88E7CE182AC8D7005FD506 /* spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight.png; sourceTree = SOURCE_ROOT; };
+		AD88E7D0182AC907005FD506 /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon.png"; sourceTree = SOURCE_ROOT; };
+		AD88E7D2182AC992005FD506 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
 		ADB53ADD18285EEE00D2A243 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = views/HeaderView.h; sourceTree = "<group>"; };
 		ADB53ADE18285EEE00D2A243 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = views/HeaderView.m; sourceTree = "<group>"; };
 		ADB53AE11828915700D2A243 /* StickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickyHeaderFlowLayout.h; path = kanji/models/StickyHeaderFlowLayout.h; sourceTree = "<group>"; };
 		ADB53AE21828915700D2A243 /* StickyHeaderFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StickyHeaderFlowLayout.m; path = kanji/models/StickyHeaderFlowLayout.m; sourceTree = "<group>"; };
-		ADB53AE41828B3AC00D2A243 /* icon-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-4in.png"; sourceTree = SOURCE_ROOT; };
 		ADB53AE61828B4CA00D2A243 /* launch-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-4in.png"; sourceTree = SOURCE_ROOT; };
 		ADB53AE81828B52B00D2A243 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = SOURCE_ROOT; };
 		ADB53AEA1829723600D2A243 /* RadicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RadicalViewController.h; path = Controllers/RadicalViewController.h; sourceTree = "<group>"; };
@@ -261,9 +267,12 @@
 		ADBA62951828400800E74E46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD88E7D2182AC992005FD506 /* launch.png */,
+				AD88E7D0182AC907005FD506 /* settings-icon.png */,
+				AD88E7CE182AC8D7005FD506 /* spotlight.png */,
+				AD88E7CC182AC712005FD506 /* icon-retina4in.png */,
 				ADB53AE81828B52B00D2A243 /* Default~iphone.png */,
 				ADB53AE61828B4CA00D2A243 /* launch-4in.png */,
-				ADB53AE41828B3AC00D2A243 /* icon-4in.png */,
 				3A9A6F7F156D6A120077857F /* icon-retina2.png */,
 				3A9A6F7B156D254A0077857F /* icon-retina.png */,
 				3A9A6F79156D25040077857F /* icon.png */,
@@ -369,15 +378,18 @@
 				3A997EA61563E1E6003B81C4 /* MainStoryboard.storyboard in Resources */,
 				3A997EFD1567EDCA003B81C4 /* kanji-seed.json in Resources */,
 				3A9A6F72156D22230077857F /* 2000px-書.png in Resources */,
+				AD88E7D3182AC992005FD506 /* launch.png in Resources */,
 				3A9A6F74156D22410077857F /* Default.png in Resources */,
 				3A9A6F76156D22670077857F /* Default@2x.png in Resources */,
 				3A9A6F78156D24E10077857F /* icon.xcf in Resources */,
 				3A9A6F7A156D25040077857F /* icon.png in Resources */,
 				ADB53AE91828B52B00D2A243 /* Default~iphone.png in Resources */,
 				ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */,
-				ADB53AE51828B3AC00D2A243 /* icon-4in.png in Resources */,
 				3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */,
+				AD88E7D1182AC907005FD506 /* settings-icon.png in Resources */,
+				AD88E7CD182AC712005FD506 /* icon-retina4in.png in Resources */,
 				3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */,
+				AD88E7CF182AC8D7005FD506 /* spotlight.png in Resources */,
 				ADBA628A18241C0E00E74E46 /* radicals.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
