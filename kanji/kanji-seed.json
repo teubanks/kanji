@@ -14,7 +14,7 @@
   {
     "kanji":"国",
     "onyomi":"コク ク",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"country"
   },
   {
@@ -26,7 +26,7 @@
   {
     "kanji":"年",
     "onyomi":"ネン ト",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"year"
   },
   {
@@ -50,7 +50,7 @@
   {
     "kanji":"本",
     "onyomi":"ホン モ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"book, present, main, true, real, counter for long things"
   },
   {
@@ -98,7 +98,7 @@
   {
     "kanji":"月",
     "onyomi":"ゲツ ガツ ツ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"month, moon"
   },
   {
@@ -140,7 +140,7 @@
   {
     "kanji":"東",
     "onyomi":"トウ ヒガ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"east"
   },
   {
@@ -152,7 +152,7 @@
   {
     "kanji":"今",
     "onyomi":"コン キン イ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"now"
   },
   {
@@ -176,7 +176,7 @@
   {
     "kanji":"学",
     "onyomi":"ガク マナ.",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"study, learning, science"
   },
   {
@@ -248,7 +248,7 @@
   {
     "kanji":"山",
     "onyomi":"サン セン ヤ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"mountain"
   },
   {
@@ -266,7 +266,7 @@
   {
     "kanji":"北",
     "onyomi":"ホク キ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"north"
   },
   {
@@ -278,7 +278,7 @@
   {
     "kanji":"百",
     "onyomi":"ヒャク ビャク モ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"hundred"
   },
   {
@@ -302,13 +302,13 @@
   {
     "kanji":"川",
     "onyomi":"セン カ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"stream,river"
   },
   {
     "kanji":"千",
     "onyomi":"セン",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"thousand"
   },
   {
@@ -320,7 +320,7 @@
   {
     "kanji":"半",
     "onyomi":"ハン ナカ.",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"half, middle, odd number, semi-, part-"
   },
   {
@@ -332,19 +332,19 @@
   {
     "kanji":"西",
     "onyomi":"セイ サイ ス ニ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"west,Spain"
   },
   {
     "kanji":"電",
     "onyomi":"デン",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"electricity"
   },
   {
     "kanji":"校",
     "onyomi":"コウ キョ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"exam, school, printing, proof, correction"
   },
   {
@@ -356,7 +356,7 @@
   {
     "kanji":"土",
     "onyomi":"ド ト ツ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"soil, earth,ground, Turkey"
   },
   {
@@ -380,7 +380,7 @@
   {
     "kanji":"車",
     "onyomi":"シャ クル",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"car"
   },
   {
@@ -392,13 +392,13 @@
   {
     "kanji":"南",
     "onyomi":"ナン ナ ミナ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"south"
   },
   {
     "kanji":"万",
     "onyomi":"マン バン ヨロ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"ten thousand"
   },
   {
@@ -434,7 +434,7 @@
   {
     "kanji":"右",
     "onyomi":"ウ ユウ ミ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"right"
   },
   {
@@ -446,13 +446,13 @@
   {
     "kanji":"友",
     "onyomi":"ユウ ト",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"friend"
   },
   {
     "kanji":"左",
     "onyomi":"サ シャ ヒダ",
-    "kunyomi":"",
+    "kunyomi":"None",
     "english":"left"
   },
   {
