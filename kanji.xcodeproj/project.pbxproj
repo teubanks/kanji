@@ -37,6 +37,7 @@
 		AD88E7CF182AC8D7005FD506 /* spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7CE182AC8D7005FD506 /* spotlight.png */; };
 		AD88E7D1182AC907005FD506 /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D0182AC907005FD506 /* settings-icon.png */; };
 		AD88E7D3182AC992005FD506 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D2182AC992005FD506 /* launch.png */; };
+		AD88E7D6182ACEEB005FD506 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD88E7D5182ACEEB005FD506 /* Crashlytics.framework */; };
 		ADB53ADF18285EEE00D2A243 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53ADE18285EEE00D2A243 /* HeaderView.m */; };
 		ADB53AE31828915700D2A243 /* StickyHeaderFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB53AE21828915700D2A243 /* StickyHeaderFlowLayout.m */; };
 		ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = ADB53AE61828B4CA00D2A243 /* launch-4in.png */; };
@@ -99,6 +100,7 @@
 		AD88E7CE182AC8D7005FD506 /* spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight.png; sourceTree = SOURCE_ROOT; };
 		AD88E7D0182AC907005FD506 /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon.png"; sourceTree = SOURCE_ROOT; };
 		AD88E7D2182AC992005FD506 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
+		AD88E7D5182ACEEB005FD506 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		ADB53ADD18285EEE00D2A243 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = views/HeaderView.h; sourceTree = "<group>"; };
 		ADB53ADE18285EEE00D2A243 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = views/HeaderView.m; sourceTree = "<group>"; };
 		ADB53AE11828915700D2A243 /* StickyHeaderFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StickyHeaderFlowLayout.h; path = kanji/models/StickyHeaderFlowLayout.h; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A997E911563E1E5003B81C4 /* UIKit.framework in Frameworks */,
+				AD88E7D6182ACEEB005FD506 /* Crashlytics.framework in Frameworks */,
 				3A997E931563E1E5003B81C4 /* Foundation.framework in Frameworks */,
 				3A997E951563E1E5003B81C4 /* CoreGraphics.framework in Frameworks */,
 				3A997E971563E1E5003B81C4 /* CoreData.framework in Frameworks */,
@@ -169,6 +172,7 @@
 		3A997E8F1563E1E5003B81C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD88E7D5182ACEEB005FD506 /* Crashlytics.framework */,
 				3A997E901563E1E5003B81C4 /* UIKit.framework */,
 				3A997E921563E1E5003B81C4 /* Foundation.framework */,
 				3A997E941563E1E5003B81C4 /* CoreGraphics.framework */,
@@ -308,6 +312,7 @@
 				3A997E881563E1E5003B81C4 /* Sources */,
 				3A997E891563E1E5003B81C4 /* Frameworks */,
 				3A997E8A1563E1E5003B81C4 /* Resources */,
+				AD88E7D4182ACECE005FD506 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -417,6 +422,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		AD88E7D4182ACECE005FD506 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run a389ec833f984cc08dab0cbc95c10d780d1db5e8";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -539,6 +558,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/narshlob/Dropbox/iphone/kanji,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";
@@ -555,6 +578,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/narshlob/Dropbox/iphone/kanji,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "kanji/kanji-Prefix.pch";
 				INFOPLIST_FILE = "kanji/kanji-Info.plist";

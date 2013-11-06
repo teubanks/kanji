@@ -12,6 +12,7 @@
 #import "Kanji.h"
 #import "Radical.h"
 #import "KanjiCollectionViewController.h"
+#import <Crashlytics/Crashlytics.h>
 
 @implementation AppDelegate
 
@@ -30,6 +31,7 @@ BOOL _databaseExists = NO;
     [self seedDatabase];
 
     [kanjiCollectionVC setManagedObjectContext:self.managedObjectContext];
+    [Crashlytics startWithAPIKey:@"a389ec833f984cc08dab0cbc95c10d780d1db5e8"];
     return YES;
 }
 							
