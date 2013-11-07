@@ -9,23 +9,27 @@
 
 @implementation kanjiTests
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
+-(void)beforeAll{
+    [self scrollToBottom];
+    [tester tapViewWithAccessibilityLabel:@"生"];
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
+-(void)scrollToBottom{
+    // kif framework can't scroll to the bottom. This is very hacky.
+    [tester scrollViewWithAccessibilityLabel:@"kanji collection view" byFractionOfSizeHorizontal:0 vertical:-0.99];
+    [tester scrollViewWithAccessibilityLabel:@"kanji collection view" byFractionOfSizeHorizontal:0 vertical:-0.99];
+    [tester scrollViewWithAccessibilityLabel:@"kanji collection view" byFractionOfSizeHorizontal:0 vertical:-0.99];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in kanjiTests");
+-(void)testClickOnKanji {
+    [tester waitForViewWithAccessibilityLabel:@"english text"];
 }
 
+-(void)testKunyomiOnKanjiPage {
+    [tester waitForViewWithAccessibilityLabel:@"kunyomi text"];
+}
+
+-(void)testOnyomiOnKanjiPage {
+    [tester waitForViewWithAccessibilityLabel:@"onyomi text"];
+}
 @end

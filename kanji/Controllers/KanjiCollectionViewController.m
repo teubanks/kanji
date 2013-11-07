@@ -21,6 +21,11 @@
 
 @implementation KanjiCollectionViewController
 
+-(void)viewDidLoad {
+    [super viewDidLoad];
+    [self.collectionView setAccessibilityLabel:@"kanji collection view"];
+}
+
 -(void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
     DataSource *dataSource = (DataSource*)self.collectionView.dataSource;
     [dataSource setManagedObjectContext:managedObjectContext];

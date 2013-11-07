@@ -36,12 +36,14 @@ NSString *radicalHeaderID = @"RadicalHeader";
         RadicalCell *cell = (RadicalCell*)[collectionView dequeueReusableCellWithReuseIdentifier:radicalCellID forIndexPath:indexPath];
         Radical *currentRadical = self.prefetchedRadicals[indexPath.row];
         [cell.radicalCellLabel setText:currentRadical.character];
+        [cell setAccessibilityLabel:currentRadical.character];
         cell.radicalEntity = currentRadical;
         return cell;
     } else {
         KanjiCell *cell = (KanjiCell*)[collectionView dequeueReusableCellWithReuseIdentifier:kanjiCellID forIndexPath:indexPath];
         Kanji *currentKanji = self.prefetchedKanji[indexPath.row];
         [cell.kanjiCellLabel setText:currentKanji.kanji];
+        [cell setAccessibilityLabel:currentKanji.kanji];
         cell.kanjiEntity = currentKanji;
         return cell;
     }

@@ -5,8 +5,8 @@
 //  Created by Tracey Eubanks on 5/16/12.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <KIF/KIF.h>
 
-@interface kanjiTests : SenTestCase
+@interface kanjiTests : KIFTestCase
 
 @end
