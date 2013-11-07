@@ -14,6 +14,12 @@
     [tester tapViewWithAccessibilityLabel:@"生"];
 }
 
+-(void)afterAll {
+    [tester tapViewWithAccessibilityLabel:@"Kanji"];
+    UICollectionView *kanjiCollectionView = (UICollectionView*)[tester waitForViewWithAccessibilityLabel:@"kanji collection view"];
+    [kanjiCollectionView setContentOffset:CGPointMake(0, 0)];
+}
+
 -(void)scrollToBottom{
     // kif framework can't scroll to the bottom. This is very hacky.
     [tester scrollViewWithAccessibilityLabel:@"kanji collection view" byFractionOfSizeHorizontal:0 vertical:-0.99];
@@ -25,11 +31,11 @@
     [tester waitForViewWithAccessibilityLabel:@"english text"];
 }
 
--(void)testKunyomiOnKanjiPage {
-    [tester waitForViewWithAccessibilityLabel:@"kunyomi text"];
-}
-
 -(void)testOnyomiOnKanjiPage {
     [tester waitForViewWithAccessibilityLabel:@"onyomi text"];
+}
+
+-(void)testKunyomiOnKanjiPage {
+    [tester waitForViewWithAccessibilityLabel:@"kunyomi text"];
 }
 @end

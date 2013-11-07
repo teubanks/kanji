@@ -6,7 +6,7 @@
 //
 //
 
-#import "KIFTestCase.h"
+#import <KIF/KIF.h>
 
 @interface radicalTests : KIFTestCase
 
