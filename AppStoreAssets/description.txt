@@ -1,0 +1,7 @@
+Kanji App Description
+
+Simple reference app for Kanji Radicals and for level N5 of the Japanese Language Proficiency Test*.
+
+A radical is a sub-element found throughout different kanji characters. Every kanji either is a radical or is made up of radicals. Radicals express the general nature of the kanji characters. They are part of the kanji character that gives you a clue to its origin, group, meaning, or pronunciation.
+
+*Japanese Language Proficiency Test no longer uses an explicit set of Kanji. This app represents what might appear on level N5 of the test.

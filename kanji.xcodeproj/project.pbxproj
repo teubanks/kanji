@@ -33,7 +33,7 @@
 		3A9A6F7A156D25040077857F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F79156D25040077857F /* icon.png */; };
 		3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7B156D254A0077857F /* icon-retina.png */; };
 		3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9A6F7F156D6A120077857F /* icon-retina2.png */; };
-		AD88E7CD182AC712005FD506 /* icon-retina4in.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7CC182AC712005FD506 /* icon-retina4in.png */; };
+		AD88E7CD182AC712005FD506 /* icon-4in.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7CC182AC712005FD506 /* icon-4in.png */; };
 		AD88E7CF182AC8D7005FD506 /* spotlight.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7CE182AC8D7005FD506 /* spotlight.png */; };
 		AD88E7D1182AC907005FD506 /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D0182AC907005FD506 /* settings-icon.png */; };
 		AD88E7D3182AC992005FD506 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = AD88E7D2182AC992005FD506 /* launch.png */; };
@@ -65,7 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A997E8C1563E1E5003B81C4 /* kanji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kanji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A997E8C1563E1E5003B81C4 /* Kanji Ref.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kanji Ref.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A997E901563E1E5003B81C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A997E921563E1E5003B81C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3A997E941563E1E5003B81C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,7 +86,6 @@
 		3A997EC11563E1E6003B81C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A997EC31563E1E6003B81C4 /* kanjiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kanjiTests.h; sourceTree = "<group>"; };
 		3A997EC41563E1E6003B81C4 /* kanjiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kanjiTests.m; sourceTree = "<group>"; };
-		3A997ECE1563E35E003B81C4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3A997EF41565F5C5003B81C4 /* Resolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resolve.h; sourceTree = "<group>"; };
 		3A997EF51565F5C5003B81C4 /* Resolve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resolve.m; sourceTree = "<group>"; };
 		3A997EF815668C22003B81C4 /* Kanji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kanji.h; sourceTree = "<group>"; };
@@ -99,7 +98,7 @@
 		3A9A6F79156D25040077857F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		3A9A6F7B156D254A0077857F /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina.png"; path = "../icon-retina.png"; sourceTree = "<group>"; };
 		3A9A6F7F156D6A120077857F /* icon-retina2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina2.png"; path = "../icon-retina2.png"; sourceTree = "<group>"; };
-		AD88E7CC182AC712005FD506 /* icon-retina4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-retina4in.png"; sourceTree = SOURCE_ROOT; };
+		AD88E7CC182AC712005FD506 /* icon-4in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-4in.png"; sourceTree = SOURCE_ROOT; };
 		AD88E7CE182AC8D7005FD506 /* spotlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlight.png; sourceTree = SOURCE_ROOT; };
 		AD88E7D0182AC907005FD506 /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-icon.png"; sourceTree = SOURCE_ROOT; };
 		AD88E7D2182AC992005FD506 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = SOURCE_ROOT; };
@@ -173,7 +172,7 @@
 		3A997E8D1563E1E5003B81C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A997E8C1563E1E5003B81C4 /* kanji.app */,
+				3A997E8C1563E1E5003B81C4 /* Kanji Ref.app */,
 				3A997EB51563E1E6003B81C4 /* kanjiTests.octest */,
 			);
 			name = Products;
@@ -296,7 +295,7 @@
 				AD88E7D2182AC992005FD506 /* launch.png */,
 				AD88E7D0182AC907005FD506 /* settings-icon.png */,
 				AD88E7CE182AC8D7005FD506 /* spotlight.png */,
-				AD88E7CC182AC712005FD506 /* icon-retina4in.png */,
+				AD88E7CC182AC712005FD506 /* icon-4in.png */,
 				ADB53AE81828B52B00D2A243 /* Default~iphone.png */,
 				ADB53AE61828B4CA00D2A243 /* launch-4in.png */,
 				3A9A6F7F156D6A120077857F /* icon-retina2.png */,
@@ -327,9 +326,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A997E8B1563E1E5003B81C4 /* kanji */ = {
+		3A997E8B1563E1E5003B81C4 /* Kanji Ref */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A997EC81563E1E6003B81C4 /* Build configuration list for PBXNativeTarget "kanji" */;
+			buildConfigurationList = 3A997EC81563E1E6003B81C4 /* Build configuration list for PBXNativeTarget "Kanji Ref" */;
 			buildPhases = (
 				3A997E881563E1E5003B81C4 /* Sources */,
 				3A997E891563E1E5003B81C4 /* Frameworks */,
@@ -340,9 +339,9 @@
 			);
 			dependencies = (
 			);
-			name = kanji;
+			name = "Kanji Ref";
 			productName = kanji;
-			productReference = 3A997E8C1563E1E5003B81C4 /* kanji.app */;
+			productReference = 3A997E8C1563E1E5003B81C4 /* Kanji Ref.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3A997EB41563E1E6003B81C4 /* kanjiTests */ = {
@@ -373,7 +372,7 @@
 				LastUpgradeCheck = 0430;
 				TargetAttributes = {
 					3A997E8B1563E1E5003B81C4 = {
-						DevelopmentTeam = J242ZBXRDH;
+						DevelopmentTeam = EB2SKHQ2H8;
 					};
 				};
 			};
@@ -390,7 +389,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A997E8B1563E1E5003B81C4 /* kanji */,
+				3A997E8B1563E1E5003B81C4 /* Kanji Ref */,
 				3A997EB41563E1E6003B81C4 /* kanjiTests */,
 			);
 		};
@@ -414,7 +413,7 @@
 				ADB53AE71828B4CA00D2A243 /* launch-4in.png in Resources */,
 				3A9A6F7C156D254A0077857F /* icon-retina.png in Resources */,
 				AD88E7D1182AC907005FD506 /* settings-icon.png in Resources */,
-				AD88E7CD182AC712005FD506 /* icon-retina4in.png in Resources */,
+				AD88E7CD182AC712005FD506 /* icon-4in.png in Resources */,
 				3A9A6F80156D6A130077857F /* icon-retina2.png in Resources */,
 				AD88E7CF182AC8D7005FD506 /* spotlight.png in Resources */,
 				ADBA628A18241C0E00E74E46 /* radicals.json in Resources */,
@@ -496,7 +495,7 @@
 /* Begin PBXTargetDependency section */
 		3A997EBC1563E1E6003B81C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3A997E8B1563E1E5003B81C4 /* kanji */;
+			target = 3A997E8B1563E1E5003B81C4 /* Kanji Ref */;
 			targetProxy = 3A997EBB1563E1E6003B81C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -514,7 +513,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A997EA51563E1E6003B81C4 /* en */,
-				3A997ECE1563E35E003B81C4 /* ja */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -594,7 +592,7 @@
 					/Users/narshlob/Dropbox/iphone/kanji/Flurry,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4378F80A-CF21-4505-8B56-22A2B91B497A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -603,8 +601,8 @@
 		3A997ECA1563E1E6003B81C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/narshlob/Dropbox/iphone/kanji,
@@ -619,7 +617,7 @@
 					/Users/narshlob/Dropbox/iphone/kanji/Flurry,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4378F80A-CF21-4505-8B56-22A2B91B497A";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -671,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A997EC81563E1E6003B81C4 /* Build configuration list for PBXNativeTarget "kanji" */ = {
+		3A997EC81563E1E6003B81C4 /* Build configuration list for PBXNativeTarget "Kanji Ref" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A997EC91563E1E6003B81C4 /* Debug */,

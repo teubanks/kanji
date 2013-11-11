@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7EE6AED2-5563-45C0-BE50-DF1BA2844AAF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>kanji</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>590E0C3B-205B-400F-8D84-A96B8E3C16A7</key>
+		<string>ssh://github.com/teubanks/kanji.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>kanji.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>590E0C3B-205B-400F-8D84-A96B8E3C16A7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/teubanks/kanji.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>590E0C3B-205B-400F-8D84-A96B8E3C16A7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>590E0C3B-205B-400F-8D84-A96B8E3C16A7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kanji</string>
+		</dict>
+	</array>
+</dict>
+</plist>
