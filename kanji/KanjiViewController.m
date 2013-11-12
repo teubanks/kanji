@@ -55,6 +55,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
     [[self.navigationController.navigationBar backItem] setAccessibilityLabel:@"Kanji"];
+    [[self.navigationController.nav]]
 }
 
 //-(void)viewWillAppear:(BOOL)animated {

@@ -14,6 +14,8 @@
 #import "RadicalViewController.h"
 #import "Radical.h"
 #import "RadicalCell.h"
+#import "HeaderView.h"
+#import "StickyHeaderFlowLayout.h"
 
 @interface KanjiCollectionViewController ()
 
@@ -23,7 +25,11 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    UINib *headerNib = [UINib nibWithNibName:@"HeaderView" bundle:[NSBundle mainBundle]];
+    [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"KanjiHeader"];
     [self.collectionView setAccessibilityLabel:@"kanji collection view"];
+    StickyHeaderFlowLayout *flowLayout = (StickyHeaderFlowLayout*)[self.collectionView collectionViewLayout];
+    flowLayout.headerReferenceSize = CGSizeMake(300, 50);
 }
 
 -(void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {

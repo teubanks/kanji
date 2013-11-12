@@ -31,13 +31,13 @@
 
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:idx];
 
-        // returns nil for some reason.. ??
         UICollectionViewLayoutAttributes *layoutAttributes = [self layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader atIndexPath:indexPath];
  
         [answer addObject:layoutAttributes];
 
     }];
 
+    int i = 0;
     for (UICollectionViewLayoutAttributes *layoutAttributes in answer) {
 
         if ([layoutAttributes.representedElementKind isEqualToString:UICollectionElementKindSectionHeader]) {
@@ -53,12 +53,16 @@
 
             CGFloat headerHeight = CGRectGetHeight(layoutAttributes.frame);
             CGPoint origin = layoutAttributes.frame.origin;
+
+            CGRect firstCellFrame = firstCellAttrs.frame;
+            CGRect lastCellFrame = lastCellAttrs.frame;
+
             origin.y = MIN(
                            MAX(
-                               contentOffset.y,
-                               (CGRectGetMinY(firstCellAttrs.frame) - headerHeight)
+                               contentOffset.y + 64,
+                               (CGRectGetMinY(firstCellFrame) - headerHeight)
                                ),
-                           (CGRectGetMaxY(lastCellAttrs.frame) - headerHeight)
+                           (CGRectGetMaxY(lastCellFrame) - headerHeight)
                            );
 
             layoutAttributes.zIndex = 1024;
@@ -66,9 +70,9 @@
                 .origin = origin,
                 .size = layoutAttributes.frame.size
             };
-            
+
         }
-        
+        i++;
     }
     
     return answer;
